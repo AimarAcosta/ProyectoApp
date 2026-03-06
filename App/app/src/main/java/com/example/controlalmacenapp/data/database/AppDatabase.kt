@@ -5,9 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.controlalmacenapp.data.entidades.ProductoEntity
+import com.example.controlalmacenapp.data.entidades.ProveedorEntity
 import com.example.controlalmacenapp.data.entidades.UsuarioEntity
 
-@Database(entities = [UsuarioEntity::class, ProductoEntity::class], version = 1)
+@Database(entities = [UsuarioEntity::class, ProductoEntity::class, ProveedorEntity::class], version = 1)
 abstract class AppDatabase : RoomDatabase(){
     //Singleton pattern
     companion object {
@@ -22,7 +23,7 @@ abstract class AppDatabase : RoomDatabase(){
         private fun buildDatabase(context: Context) = Room.databaseBuilder(
             context,
             AppDatabase::class.java,
-            "myDataase"
+            "myDatabase"
         )
             .build()
 
