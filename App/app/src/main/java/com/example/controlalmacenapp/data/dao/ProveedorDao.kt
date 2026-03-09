@@ -11,5 +11,4 @@ interface ProveedorDao {
 
     @Query("SELECT * FROM ProveedorEntity ORDER BY fecha DESC")
     suspend fun getAll(): List<ProveedorEntity>
-
 }
