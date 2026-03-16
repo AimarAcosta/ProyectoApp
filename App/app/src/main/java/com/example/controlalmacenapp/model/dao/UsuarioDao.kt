@@ -27,4 +27,7 @@ interface UsuarioDao {
 
     @Query("SELECT * FROM usuarios WHERE nombre = :nombre AND password = :password AND es_administrador = 1 AND habilitado = 1")
     suspend fun loginAdmin(nombre: String, password: String): UsuarioEntity?
+
+    @Query("SELECT * FROM usuarios WHERE nombre = :nombreUsuario LIMIT 1")
+    suspend fun obtenerUsuarioPorNombre(nombreUsuario: String): UsuarioEntity?
 }

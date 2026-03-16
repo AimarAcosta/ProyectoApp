@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.controlalmacenapp-mergeDebugResources-36:/values-v16/values-v16.xml",
+            "outputFile": "com.example.controlalmacenapp-mergeDebugResources-33:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\eec68a4b3c95abebac9cf97108159bb6\\transformed\\appcompat-1.7.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\64992f56c518f4e0942a612d037d9cd8\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -12,6 +12,24 @@
                         "endLines": "5",
                         "endColumns": "12",
                         "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\e358f73f900863ff1b63aa8c98a28f8d\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

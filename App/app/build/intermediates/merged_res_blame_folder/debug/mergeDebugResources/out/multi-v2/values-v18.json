@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.controlalmacenapp-mergeDebugResources-36:/values-v18/values-v18.xml",
+            "outputFile": "com.example.controlalmacenapp-mergeDebugResources-33:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\eec68a4b3c95abebac9cf97108159bb6\\transformed\\appcompat-1.7.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\64992f56c518f4e0942a612d037d9cd8\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

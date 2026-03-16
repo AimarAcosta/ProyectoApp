@@ -6,14 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="36" />
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
+        android:targetSdkVersion="34" />
 
     <permission
         android:name="com.example.controlalmacenapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -32,6 +25,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.ControlAlmacenApp" >
         <activity android:name="com.example.controlalmacenapp.view.MainActivity" />
         <activity
@@ -43,28 +37,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name="com.google.android.gms.metadata.ModuleDependencies"
-            android:enabled="false"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
-            </intent-filter>
-
-            <meta-data
-                android:name="maps3d:0:preferred"
-                android:value="" />
-        </service>
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
