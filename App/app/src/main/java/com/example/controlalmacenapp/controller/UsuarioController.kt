@@ -18,7 +18,7 @@ class UsuarioController(private val dao: UsuarioDao) {
             )
             val empleado = UsuarioEntity(
                 nombre = "Aimar",
-                password = "1234",
+                password = "aimar",
                 esAdministrador = false,
                 habilitado = true,
                 imagenUrl = ""
@@ -31,5 +31,9 @@ class UsuarioController(private val dao: UsuarioDao) {
     suspend fun validarLogin(nombre: String, pass: String): Boolean {
         val usuario = dao.obtenerUsuarioPorNombre(nombre)
         return usuario != null && usuario.password == pass && usuario.habilitado
+    }
+
+    suspend fun obtenerTodosLosUsuarios(): List<UsuarioEntity> {
+        return dao.getUsuariosHabilitados()
     }
 }

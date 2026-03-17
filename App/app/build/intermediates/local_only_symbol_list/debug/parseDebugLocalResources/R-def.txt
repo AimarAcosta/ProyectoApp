@@ -5,12 +5,14 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo_elorrieta
-id btnLogin
-id etPasswordLogin
-id etUsuarioLogin
+drawable perfil
+id ivFotoUsuario
 id logoImage
+id rvUsuarios
+id tvNombreUsuario
 layout activity_inicio
 layout activity_main
+layout item_usuario
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

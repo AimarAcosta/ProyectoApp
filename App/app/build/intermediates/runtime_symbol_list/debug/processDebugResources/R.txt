@@ -3075,6 +3075,7 @@ int drawable notification_template_icon_bg 0x7f0700e0
 int drawable notification_template_icon_low_bg 0x7f0700e1
 int drawable notification_tile_bg 0x7f0700e2
 int drawable notify_panel_notification_icon_bg 0x7f0700e3
+int drawable perfil 0x7f0700e7
 int drawable test_level_drawable 0x7f0700e4
 int drawable tooltip_frame_dark 0x7f0700e5
 int drawable tooltip_frame_light 0x7f0700e6
@@ -3176,7 +3177,6 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
-int id btnLogin 0x7f0801f2
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id callMeasure 0x7f080064
@@ -3258,8 +3258,6 @@ int id end 0x7f0800af
 int id endToStart 0x7f0800b0
 int id enterAlways 0x7f0800b1
 int id enterAlwaysCollapsed 0x7f0800b2
-int id etPasswordLogin 0x7f0801f3
-int id etUsuarioLogin 0x7f0801f4
 int id exitUntilCollapsed 0x7f0800b3
 int id expand_activities_button 0x7f0800b4
 int id expanded_menu 0x7f0800b5
@@ -3309,6 +3307,7 @@ int id invisible 0x7f0800e0
 int id inward 0x7f0800e1
 int id italic 0x7f0800e2
 int id item_touch_helper_previous_elevation 0x7f0800e3
+int id ivFotoUsuario 0x7f0801f5
 int id jumpToEnd 0x7f0800e4
 int id jumpToStart 0x7f0800e5
 int id labeled 0x7f0800e6
@@ -3448,6 +3447,7 @@ int id right_icon 0x7f08016c
 int id right_side 0x7f08016d
 int id rounded 0x7f08016e
 int id row_index_key 0x7f08016f
+int id rvUsuarios 0x7f0801f6
 int id save_non_transition_alpha 0x7f080170
 int id save_overlay_view 0x7f080171
 int id sawtooth 0x7f080172
@@ -3555,6 +3555,7 @@ int id transition_position 0x7f0801d7
 int id transition_scene_layoutid_cache 0x7f0801d8
 int id transition_transform 0x7f0801d9
 int id triangle 0x7f0801da
+int id tvNombreUsuario 0x7f0801f7
 int id unchecked 0x7f0801db
 int id uniform 0x7f0801dc
 int id unlabeled 0x7f0801dd
@@ -3712,6 +3713,7 @@ int layout design_text_input_end_icon 0x7f0b002c
 int layout design_text_input_start_icon 0x7f0b002d
 int layout ime_base_split_test_activity 0x7f0b002e
 int layout ime_secondary_split_test_activity 0x7f0b002f
+int layout item_usuario 0x7f0b006d
 int layout m3_alert_dialog 0x7f0b0030
 int layout m3_alert_dialog_actions 0x7f0b0031
 int layout m3_alert_dialog_title 0x7f0b0032

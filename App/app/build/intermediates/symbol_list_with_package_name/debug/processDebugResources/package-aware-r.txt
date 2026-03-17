@@ -3076,6 +3076,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable perfil
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3177,7 +3178,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnLogin
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3259,8 +3259,6 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
-id etPasswordLogin
-id etUsuarioLogin
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3310,6 +3308,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivFotoUsuario
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3449,6 +3448,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvUsuarios
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3556,6 +3556,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvNombreUsuario
 id unchecked
 id uniform
 id unlabeled
@@ -3713,6 +3714,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_usuario
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

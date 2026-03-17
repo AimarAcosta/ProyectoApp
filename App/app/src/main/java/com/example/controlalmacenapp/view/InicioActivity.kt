@@ -1,44 +1,46 @@
 package com.example.controlalmacenapp.view
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.view.animation.Animation
-import android.view.animation.RotateAnimation
-import androidx.appcompat.app.AppCompatActivity
-import com.example.controlalmacenapp.R
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.controlalmacenapp.R
+import com.example.controlalmacenapp.controller.UsuarioController
+import com.example.controlalmacenapp.model.database.AppDatabase
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
-//En esta clase se realiza la animacion inicial de la app con el logo girando.
 class InicioActivity: AppCompatActivity() {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_inicio)
 
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_inicio)
+        val logo = findViewById<ImageView>(R.id.logoImage)
 
-            val logo = findViewById<ImageView>(R.id.logoImage)
+        val rotate = ObjectAnimator.ofFloat(logo, "rotation", 0f, 360f)
+        rotate.duration = 2000
+        rotate.repeatCount = ObjectAnimator.INFINITE
+        rotate.interpolator = AccelerateDecelerateInterpolator()
+        rotate.start()
 
+        lifecycleScope.launch(Dispatchers.IO) {
 
-            val rotate = RotateAnimation(
-                0f,
-                360f,
-                Animation.RELATIVE_TO_SELF,
-                0.5f,
-                Animation.RELATIVE_TO_SELF,
-                0.5f
-            )
+            val database = AppDatabase.invoke(this@InicioActivity)
+            val controller = UsuarioController(database.usuarioDao())
+            controller.inicializarDatosSiVacio()
 
-            rotate.duration = 2000
-            rotate.repeatCount = Animation.INFINITE
+            delay(3000)
 
-            logo.startAnimation(rotate)
-
-
-            Handler(Looper.getMainLooper()).postDelayed({
-                startActivity(Intent(this, MainActivity::class.java))
+            withContext(Dispatchers.Main) {
+                startActivity(Intent(this@InicioActivity, MainActivity::class.java))
                 finish()
-            }, 3000)
+            }
         }
     }
+}

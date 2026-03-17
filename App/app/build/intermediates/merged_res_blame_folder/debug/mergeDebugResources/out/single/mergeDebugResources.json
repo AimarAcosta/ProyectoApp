@@ -36,6 +36,14 @@
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-35:\\drawable_perfil.png.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\drawable\\perfil.png"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-35:\\layout_item_usuario.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\layout\\item_usuario.xml"
+    },
+    {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-35:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\drawable\\ic_launcher_background.xml"
     },
@@ -56,10 +64,6 @@
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.controlalmacenapp-debug-35:/layout_activity_main.xml.flat",
-        "source": "com.example.controlalmacenapp-main-37:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.controlalmacenapp-debug-35:/layout_item_usuario.xml.flat",
+        "source": "com.example.controlalmacenapp-main-37:/layout/item_usuario.xml"
     },
     {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
