@@ -1,5 +1,6 @@
 package com.example.controlalmacenapp.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.widget.EditText
@@ -75,6 +76,11 @@ class MainActivity : AppCompatActivity() {
             withContext(Dispatchers.Main) {
                 if (accesoPermitido) {
                     Toast.makeText(this@MainActivity, "¡Bienvenido, $nombre!", Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this@MainActivity, MenuPrincipalActivity::class.java)
+                    startActivity(intent)
+                    finish()
+
                 } else {
                     Toast.makeText(this@MainActivity, "Contraseña incorrecta", Toast.LENGTH_SHORT).show()
                 }

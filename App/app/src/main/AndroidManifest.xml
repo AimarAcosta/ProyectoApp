@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ControlAlmacenApp">
         <activity android:name=".view.MainActivity" />
         <activity
+            android:name=".view.MenuPrincipalActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.InicioActivity"
             android:exported="true">
             <intent-filter>

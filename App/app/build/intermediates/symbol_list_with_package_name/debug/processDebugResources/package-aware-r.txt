@@ -3178,6 +3178,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnGestionStock
+id btnGestionUsuarios
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3556,6 +3558,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvBienvenida
 id tvNombreUsuario
 id unchecked
 id uniform
@@ -3696,6 +3699,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_inicio
 layout activity_main
+layout activity_menu_principal
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

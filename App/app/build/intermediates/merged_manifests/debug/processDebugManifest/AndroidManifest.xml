@@ -29,6 +29,9 @@
         android:theme="@style/Theme.ControlAlmacenApp" >
         <activity android:name="com.example.controlalmacenapp.view.MainActivity" />
         <activity
+            android:name="com.example.controlalmacenapp.view.MenuPrincipalActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.controlalmacenapp.view.InicioActivity"
             android:exported="true" >
             <intent-filter>
