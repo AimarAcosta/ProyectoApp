@@ -2,12 +2,21 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable baseline_plus_one_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo_elorrieta
 drawable perfil
+id btnEditar
+id btnEliminar
 id btnGestionStock
 id btnGestionUsuarios
+id cbAdmin
+id etEmail
+id etNombre
+id etPassword
+id fab_add
+id ivFoto
 id ivFotoUsuario
 id logoImage
 id rvUsuarios
@@ -16,6 +25,7 @@ id tvNombreUsuario
 layout activity_inicio
 layout activity_main
 layout activity_menu_principal
+layout activity_nuevo_usuario
 layout item_usuario
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ControlAlmacenApp">
         <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.NuevoUsuarioActivity"/>
         <activity
             android:name=".view.MenuPrincipalActivity"
             android:exported="false" />

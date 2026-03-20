@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.controlalmacenapp-mergeDebugResources-33:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.controlalmacenapp-mergeDebugResources-35:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\64992f56c518f4e0942a612d037d9cd8\\transformed\\appcompat-1.6.1\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\xabie\\.gradle\\caches\\8.13\\transforms\\29aa22b5b41d2c70084ce557a2d89b63\\transformed\\appcompat-1.7.0\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\acost\\.gradle\\caches\\8.13\\transforms\\e358f73f900863ff1b63aa8c98a28f8d\\transformed\\core-1.12.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\xabie\\.gradle\\caches\\8.13\\transforms\\492573391c64e72e983fc93b3b2957dd\\transformed\\core-1.13.0\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

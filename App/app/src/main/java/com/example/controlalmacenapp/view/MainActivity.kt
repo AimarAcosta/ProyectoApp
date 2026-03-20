@@ -18,6 +18,7 @@ import com.example.controlalmacenapp.view.usuario.UsuarioAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +35,13 @@ class MainActivity : AppCompatActivity() {
         rvUsuarios.layoutManager = GridLayoutManager(this, 5)
 
         cargarUsuarios(rvUsuarios)
+
+        val fab = findViewById<FloatingActionButton>(R.id.fab_add)
+
+        fab.setOnClickListener {
+            val intent = Intent(this, NuevoUsuarioActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun cargarUsuarios(rv: RecyclerView) {
