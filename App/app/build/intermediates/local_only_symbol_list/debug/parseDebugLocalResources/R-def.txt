@@ -8,9 +8,9 @@ drawable ic_launcher_foreground
 drawable logo_elorrieta
 drawable perfil
 id btnEditar
-id btnEliminar
 id btnGestionStock
 id btnGestionUsuarios
+id btnGuardar
 id cbAdmin
 id etEmail
 id etNombre
@@ -30,6 +30,10 @@ layout item_usuario
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string delete
+string edit
+string name
+string password
 style Base.Theme.ControlAlmacenApp
 style Theme.ControlAlmacenApp
 xml backup_rules

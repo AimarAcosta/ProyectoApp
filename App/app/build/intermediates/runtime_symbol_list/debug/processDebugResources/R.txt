@@ -3745,9 +3745,9 @@ int id bounceBoth 0x7f080063
 int id bounceEnd 0x7f080064
 int id bounceStart 0x7f080065
 int id btnEditar 0x7f08020a
-int id btnEliminar 0x7f08020b
 int id btnGestionStock 0x7f080066
 int id btnGestionUsuarios 0x7f080067
+int id btnGuardar 0x7f080211
 int id buttonPanel 0x7f080068
 int id cache_measures 0x7f080069
 int id callMeasure 0x7f08006a
@@ -4423,6 +4423,8 @@ int string character_counter_content_description 0x7f0f002a
 int string character_counter_overflowed_content_description 0x7f0f002b
 int string character_counter_pattern 0x7f0f002c
 int string clear_text_end_icon_content_description 0x7f0f002d
+int string delete 0x7f0f00ad
+int string edit 0x7f0f00ae
 int string error_a11y_label 0x7f0f002e
 int string error_icon_content_description 0x7f0f002f
 int string exposed_dropdown_menu_content_description 0x7f0f0030
@@ -4536,8 +4538,10 @@ int string mtrl_switch_track_decoration_path 0x7f0f009b
 int string mtrl_switch_track_path 0x7f0f009c
 int string mtrl_timepicker_cancel 0x7f0f009d
 int string mtrl_timepicker_confirm 0x7f0f009e
+int string name 0x7f0f00af
 int string nav_rail_collapsed_a11y_label 0x7f0f009f
 int string nav_rail_expanded_a11y_label 0x7f0f00a0
+int string password 0x7f0f00b0
 int string password_toggle_content_description 0x7f0f00a1
 int string path_password_eye 0x7f0f00a2
 int string path_password_eye_mask_strike_through 0x7f0f00a3

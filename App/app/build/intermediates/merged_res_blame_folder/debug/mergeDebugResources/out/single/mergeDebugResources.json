@@ -60,6 +60,10 @@
         "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.controlalmacenapp-debug-37:/layout_activity_main.xml.flat",
+        "source": "com.example.controlalmacenapp-main-39:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\data_extraction_rules.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "com.example.controlalmacenapp-debug-37:/layout_activity_nuevo_usuario.xml.flat",
         "source": "com.example.controlalmacenapp-main-39:/layout/activity_nuevo_usuario.xml"
+    },
+    {
+        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_usuario.xml.flat",
+        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_usuario.xml"
     },
     {
         "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_inicio.xml.flat",

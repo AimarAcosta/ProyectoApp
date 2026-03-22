@@ -3746,9 +3746,9 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnEditar
-id btnEliminar
 id btnGestionStock
 id btnGestionUsuarios
+id btnGuardar
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -4424,6 +4424,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string delete
+string edit
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4537,8 +4539,10 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string name
 string nav_rail_collapsed_a11y_label
 string nav_rail_expanded_a11y_label
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

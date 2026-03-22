@@ -9,11 +9,7 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <Button
-            android:id="@+id/btnEditar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Editar perfil"/>
+
 
         <ImageView
             android:id="@+id/ivFoto"
@@ -24,7 +20,7 @@
 
         <EditText
             android:id="@+id/etNombre"
-            android:hint="Nombre"
+            android:hint="@string/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -45,11 +41,11 @@
             android:layout_height="wrap_content"/>
 
         <Button
-            android:id="@+id/btnEliminar"
+            android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eliminar"
-            android:backgroundTint="#FF5252"/>
+            android:text="Guardar"
+            android:backgroundTint="#7CFC00"/>
 
     </LinearLayout>
 
