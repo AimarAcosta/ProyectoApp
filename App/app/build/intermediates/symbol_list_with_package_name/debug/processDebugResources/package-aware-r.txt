@@ -3745,16 +3745,21 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btnEditar
+id btnCancelar
+id btnCerrarSesion
+id btnEliminar
 id btnGestionStock
 id btnGestionUsuarios
 id btnGuardar
+id btnIrCrearUsuario
+id btnVolver
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
 id cbAdmin
+id cbHabilitado
 id center
 id centerCrop
 id centerInside
@@ -3839,7 +3844,6 @@ id etPassword
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab_add
 id fade
 id fill
 id fill_horizontal
@@ -4034,6 +4038,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvListaUsuarios
 id rvUsuarios
 id save_non_transition_alpha
 id save_overlay_view
@@ -4149,6 +4154,7 @@ id transition_transform
 id triangle
 id tvBienvenida
 id tvNombreUsuario
+id tvTitulo
 id unchecked
 id uniform
 id unlabeled
@@ -4290,6 +4296,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_inicio
+layout activity_lista_usuarios
 layout activity_main
 layout activity_menu_principal
 layout activity_nuevo_usuario

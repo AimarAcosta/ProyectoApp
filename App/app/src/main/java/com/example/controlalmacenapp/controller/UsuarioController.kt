@@ -36,4 +36,8 @@ class UsuarioController(private val dao: UsuarioDao) {
     suspend fun obtenerTodosLosUsuarios(): List<UsuarioEntity> {
         return dao.getUsuariosHabilitados()
     }
+
+    suspend fun obtenerDirectorioAdmin(): List<UsuarioEntity> {
+        return dao.obtenerTodosParaAdmin()
+    }
 }

@@ -9,8 +9,6 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-
-
         <ImageView
             android:id="@+id/ivFoto"
             android:layout_width="120dp"
@@ -20,13 +18,15 @@
 
         <EditText
             android:id="@+id/etNombre"
-            android:hint="@string/name"
+            android:hint="Nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <CheckBox
             android:id="@+id/cbAdmin"
-            android:text="Administrador" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            android:text="Administrador"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
         <EditText
             android:id="@+id/etPassword"
@@ -40,12 +40,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <CheckBox
+            android:id="@+id/cbHabilitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habilitado"
+            android:checked="true"
+            android:visibility="gone"/>
+
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar"
-            android:backgroundTint="#7CFC00"/>
+            android:backgroundTint="#7CFC00"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:backgroundTint="#B0BEC5"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:backgroundTint="#FF0000"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
 
     </LinearLayout>
 

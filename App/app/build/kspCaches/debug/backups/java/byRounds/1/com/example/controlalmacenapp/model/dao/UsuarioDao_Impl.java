@@ -266,6 +266,69 @@ public final class UsuarioDao_Impl implements UsuarioDao {
   }
 
   @Override
+  public Object obtenerTodosParaAdmin(final Continuation<? super List<UsuarioEntity>> $completion) {
+    final String _sql = "SELECT * FROM usuarios ORDER BY habilitado DESC, nombre ASC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
+    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<UsuarioEntity>>() {
+      @Override
+      @NonNull
+      public List<UsuarioEntity> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfNombre = CursorUtil.getColumnIndexOrThrow(_cursor, "nombre");
+          final int _cursorIndexOfImagenUrl = CursorUtil.getColumnIndexOrThrow(_cursor, "imagenUrl");
+          final int _cursorIndexOfEsAdministrador = CursorUtil.getColumnIndexOrThrow(_cursor, "es_administrador");
+          final int _cursorIndexOfPassword = CursorUtil.getColumnIndexOrThrow(_cursor, "password");
+          final int _cursorIndexOfEmail = CursorUtil.getColumnIndexOrThrow(_cursor, "email");
+          final int _cursorIndexOfHabilitado = CursorUtil.getColumnIndexOrThrow(_cursor, "habilitado");
+          final List<UsuarioEntity> _result = new ArrayList<UsuarioEntity>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final UsuarioEntity _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpNombre;
+            _tmpNombre = _cursor.getString(_cursorIndexOfNombre);
+            final String _tmpImagenUrl;
+            if (_cursor.isNull(_cursorIndexOfImagenUrl)) {
+              _tmpImagenUrl = null;
+            } else {
+              _tmpImagenUrl = _cursor.getString(_cursorIndexOfImagenUrl);
+            }
+            final boolean _tmpEsAdministrador;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfEsAdministrador);
+            _tmpEsAdministrador = _tmp != 0;
+            final String _tmpPassword;
+            if (_cursor.isNull(_cursorIndexOfPassword)) {
+              _tmpPassword = null;
+            } else {
+              _tmpPassword = _cursor.getString(_cursorIndexOfPassword);
+            }
+            final String _tmpEmail;
+            if (_cursor.isNull(_cursorIndexOfEmail)) {
+              _tmpEmail = null;
+            } else {
+              _tmpEmail = _cursor.getString(_cursorIndexOfEmail);
+            }
+            final boolean _tmpHabilitado;
+            final int _tmp_1;
+            _tmp_1 = _cursor.getInt(_cursorIndexOfHabilitado);
+            _tmpHabilitado = _tmp_1 != 0;
+            _item = new UsuarioEntity(_tmpId,_tmpNombre,_tmpImagenUrl,_tmpEsAdministrador,_tmpPassword,_tmpEmail,_tmpHabilitado);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+          _statement.release();
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
   public Object loginAdmin(final String nombre, final String password,
       final Continuation<? super UsuarioEntity> $completion) {
     final String _sql = "SELECT * FROM usuarios WHERE nombre = ? AND password = ? AND es_administrador = 1 AND habilitado = 1";

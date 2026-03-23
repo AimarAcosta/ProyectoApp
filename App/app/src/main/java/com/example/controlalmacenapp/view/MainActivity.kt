@@ -18,7 +18,6 @@ import com.example.controlalmacenapp.view.usuario.UsuarioAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,12 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         cargarUsuarios(rvUsuarios)
 
-        val fab = findViewById<FloatingActionButton>(R.id.fab_add)
-
-        fab.setOnClickListener {
-            val intent = Intent(this, NuevoUsuarioActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     private fun cargarUsuarios(rv: RecyclerView) {
@@ -62,33 +55,35 @@ class MainActivity : AppCompatActivity() {
 
     private fun mostrarDialogoPassword(usuario: UsuarioEntity) {
         val input = EditText(this)
-        input.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+        input.inputType = android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
         input.hint = "Escribe tu clave"
 
-        AlertDialog.Builder(this)
+        androidx.appcompat.app.AlertDialog.Builder(this)
             .setTitle("Accediendo como ${usuario.nombre}")
             .setMessage("Por favor, introduce tu contraseña:")
             .setView(input)
             .setPositiveButton("ACCEDER") { _, _ ->
                 val passwordEscrita = input.text.toString()
-                validarCredenciales(usuario.nombre, passwordEscrita)
+                validarCredenciales(usuario, passwordEscrita)
             }
             .setNegativeButton("Cancelar", null)
             .show()
     }
 
-    private fun validarCredenciales(nombre: String, pass: String) {
+    private fun validarCredenciales(usuario: UsuarioEntity, pass: String) {
         lifecycleScope.launch(Dispatchers.IO) {
-            val accesoPermitido = controller.validarLogin(nombre, pass)
+            val accesoPermitido = controller.validarLogin(usuario.nombre, pass)
 
             withContext(Dispatchers.Main) {
                 if (accesoPermitido) {
-                    Toast.makeText(this@MainActivity, "¡Bienvenido, $nombre!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "¡Bienvenido, ${usuario.nombre}!", Toast.LENGTH_SHORT).show()
 
                     val intent = Intent(this@MainActivity, MenuPrincipalActivity::class.java)
+                    intent.putExtra("ES_ADMIN", usuario.esAdministrador)
+                    intent.putExtra("NOMBRE_USUARIO", usuario.nombre)
+
                     startActivity(intent)
                     finish()
-
                 } else {
                     Toast.makeText(this@MainActivity, "Contraseña incorrecta", Toast.LENGTH_SHORT).show()
                 }

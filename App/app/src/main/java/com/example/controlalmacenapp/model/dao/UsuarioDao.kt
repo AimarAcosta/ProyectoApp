@@ -25,6 +25,9 @@ interface UsuarioDao {
     @Query("SELECT * FROM usuarios WHERE habilitado = 1 ORDER BY nombre ASC")
     suspend fun getUsuariosHabilitados(): List<UsuarioEntity>
 
+    @Query("SELECT * FROM usuarios ORDER BY habilitado DESC, nombre ASC")
+    suspend fun obtenerTodosParaAdmin(): List<UsuarioEntity>
+
     @Query("SELECT * FROM usuarios WHERE nombre = :nombre AND password = :password AND es_administrador = 1 AND habilitado = 1")
     suspend fun loginAdmin(nombre: String, password: String): UsuarioEntity?
 
