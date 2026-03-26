@@ -11,6 +11,8 @@ import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
+import com.example.controlalmacenapp.model.dao.ProductoDao;
+import com.example.controlalmacenapp.model.dao.ProductoDao_Impl;
 import com.example.controlalmacenapp.model.dao.UsuarioDao;
 import com.example.controlalmacenapp.model.dao.UsuarioDao_Impl;
 import java.lang.Class;
@@ -31,19 +33,21 @@ import javax.annotation.processing.Generated;
 public final class AppDatabase_Impl extends AppDatabase {
   private volatile UsuarioDao _usuarioDao;
 
+  private volatile ProductoDao _productoDao;
+
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `usuarios` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT NOT NULL, `imagenUrl` TEXT, `es_administrador` INTEGER NOT NULL, `password` TEXT, `email` TEXT, `habilitado` INTEGER NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `productos` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT NOT NULL, `cantidad` INTEGER NOT NULL, `cantidad_minima` INTEGER NOT NULL, `imagen_url` TEXT, `habilitado` INTEGER NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `productos` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT NOT NULL, `imagenUrl` TEXT, `cantidad` INTEGER NOT NULL, `cantidad_minima` INTEGER NOT NULL, `habilitado` INTEGER NOT NULL, `ultima_interaccion` INTEGER NOT NULL)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `proveedores` (`cif` TEXT NOT NULL, `nombre` TEXT NOT NULL, PRIMARY KEY(`cif`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `albaranes` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `proveedor_cif` TEXT NOT NULL, `importe` REAL NOT NULL, `pagado` INTEGER NOT NULL, `fecha_pago` INTEGER, `foto_uri` TEXT, FOREIGN KEY(`proveedor_cif`) REFERENCES `proveedores`(`cif`) ON UPDATE NO ACTION ON DELETE RESTRICT )");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_albaranes_proveedor_cif` ON `albaranes` (`proveedor_cif`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bea75d211ff7c98a054349033cc8002f')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fe36b2fc5f94b3074767e348082acc3d')");
       }
 
       @Override
@@ -113,13 +117,14 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoUsuarios + "\n"
                   + " Found:\n" + _existingUsuarios);
         }
-        final HashMap<String, TableInfo.Column> _columnsProductos = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsProductos = new HashMap<String, TableInfo.Column>(7);
         _columnsProductos.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProductos.put("nombre", new TableInfo.Column("nombre", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProductos.put("imagenUrl", new TableInfo.Column("imagenUrl", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProductos.put("cantidad", new TableInfo.Column("cantidad", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProductos.put("cantidad_minima", new TableInfo.Column("cantidad_minima", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsProductos.put("imagen_url", new TableInfo.Column("imagen_url", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProductos.put("habilitado", new TableInfo.Column("habilitado", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProductos.put("ultima_interaccion", new TableInfo.Column("ultima_interaccion", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysProductos = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesProductos = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoProductos = new TableInfo("productos", _columnsProductos, _foreignKeysProductos, _indicesProductos);
@@ -161,7 +166,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "bea75d211ff7c98a054349033cc8002f", "5eb33cc1212232bef9bea3786a738aff");
+    }, "fe36b2fc5f94b3074767e348082acc3d", "9a03fabc32745edd27041bcd8dd0f330");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;
@@ -210,6 +215,7 @@ public final class AppDatabase_Impl extends AppDatabase {
   protected Map<Class<?>, List<Class<?>>> getRequiredTypeConverters() {
     final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
     _typeConvertersMap.put(UsuarioDao.class, UsuarioDao_Impl.getRequiredConverters());
+    _typeConvertersMap.put(ProductoDao.class, ProductoDao_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -238,6 +244,20 @@ public final class AppDatabase_Impl extends AppDatabase {
           _usuarioDao = new UsuarioDao_Impl(this);
         }
         return _usuarioDao;
+      }
+    }
+  }
+
+  @Override
+  public ProductoDao productoDao() {
+    if (_productoDao != null) {
+      return _productoDao;
+    } else {
+      synchronized(this) {
+        if(_productoDao == null) {
+          _productoDao = new ProductoDao_Impl(this);
+        }
+        return _productoDao;
       }
     }
   }

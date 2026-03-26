@@ -6,21 +6,17 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "productos")
 data class ProductoEntity(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
 
-    @ColumnInfo(name = "nombre")
-    val nombre: String,
+    @ColumnInfo(name = "nombre") val nombre: String,
 
-    @ColumnInfo(name = "cantidad")
-    val cantidad: Int = 0,
+    @ColumnInfo(name = "imagenUrl") val imagenUrl: String?,
 
-    @ColumnInfo(name = "cantidad_minima")
-    val cantidadMinima: Int = 0,
+    @ColumnInfo(name = "cantidad") val cantidad: Int = 0,
 
-    @ColumnInfo(name = "imagen_url")
-    val imagenUrl: String?,
+    @ColumnInfo(name = "cantidad_minima") val cantidadMinima: Int = 0,
 
-    @ColumnInfo(name = "habilitado")
-    val habilitado: Boolean = true
+    @ColumnInfo(name = "habilitado") val habilitado: Boolean = true,
+
+    @ColumnInfo(name = "ultima_interaccion") val ultimaInteraccion: Long = System.currentTimeMillis()
 )

@@ -46,11 +46,27 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "Base de datos vacía", Toast.LENGTH_SHORT).show()
                 } else {
                     rv.adapter = UsuarioAdapter(listaUsuarios) { usuarioSeleccionado ->
-                        mostrarDialogoPassword(usuarioSeleccionado)
+
+                        if (usuarioSeleccionado.nombre.uppercase() == "ADMIN") {
+                            mostrarDialogoPassword(usuarioSeleccionado)
+                        } else {
+                            accederDirectamente(usuarioSeleccionado)
+                        }
+
                     }
                 }
             }
         }
+    }
+    private fun accederDirectamente(usuario: UsuarioEntity) {
+        Toast.makeText(this, "¡Bienvenido, ${usuario.nombre}!", Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this, MenuPrincipalActivity::class.java)
+        intent.putExtra("ES_ADMIN", usuario.esAdministrador)
+        intent.putExtra("NOMBRE_USUARIO", usuario.nombre)
+
+        startActivity(intent)
+        finish()
     }
 
     private fun mostrarDialogoPassword(usuario: UsuarioEntity) {
