@@ -42,6 +42,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.controlalmacenapp.view.NuevoProductoActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.controlalmacenapp.view.ListaUsuariosActivity"
             android:exported="false" />
 

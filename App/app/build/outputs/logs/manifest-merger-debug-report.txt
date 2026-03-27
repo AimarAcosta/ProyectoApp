@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-36:12
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\2354c5d2b3fbe9beb70ebb252f890fb4\transformed\room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\acost\.gradle\caches\8.13\transforms\ede871242254aacb1d2646eca5624006\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
@@ -57,8 +57,8 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\acost\.gradle\ca
 	xmlns:android
 		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-31:19
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-34:19
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-34:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\acost\.gradle\caches\8.13\transforms\ede871242254aacb1d2646eca5624006\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
@@ -127,12 +127,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
 		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:25:27-74
-activity#com.example.controlalmacenapp.view.ListaUsuariosActivity
+activity#com.example.controlalmacenapp.view.NuevoProductoActivity
 ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
 		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:29:13-55
+activity#com.example.controlalmacenapp.view.ListaUsuariosActivity
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:31:9-33:40
+	android:exported
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:32:13-55
 uses-sdk
 INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml

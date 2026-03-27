@@ -33,4 +33,7 @@ interface ProductoDao {
 
     @Query("UPDATE productos SET cantidad = cantidad - 1, ultima_interaccion = :timestamp WHERE id = :id AND cantidad > 0")
     suspend fun decrementarStock(id: Int, timestamp: Long = System.currentTimeMillis())
+
+    @Query("SELECT * FROM productos WHERE id = :id LIMIT 1")
+    suspend fun obtenerProductoPorId(id: Int): ProductoEntity?
 }

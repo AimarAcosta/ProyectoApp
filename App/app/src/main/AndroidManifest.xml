@@ -26,6 +26,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".view.NuevoProductoActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ListaUsuariosActivity"
             android:exported="false" />
     </application>

@@ -3,6 +3,7 @@ package com.example.controlalmacenapp.model.dao;
 import android.database.Cursor;
 import android.os.CancellationSignal;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.room.CoroutinesRoom;
 import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
@@ -395,6 +396,62 @@ public final class ProductoDao_Impl implements ProductoDao {
             _tmpUltimaInteraccion = _cursor.getLong(_cursorIndexOfUltimaInteraccion);
             _item = new ProductoEntity(_tmpId,_tmpNombre,_tmpImagenUrl,_tmpCantidad,_tmpCantidadMinima,_tmpHabilitado,_tmpUltimaInteraccion);
             _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+          _statement.release();
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
+  public Object obtenerProductoPorId(final int id,
+      final Continuation<? super ProductoEntity> $completion) {
+    final String _sql = "SELECT * FROM productos WHERE id = ? LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, id);
+    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
+    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<ProductoEntity>() {
+      @Override
+      @Nullable
+      public ProductoEntity call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfNombre = CursorUtil.getColumnIndexOrThrow(_cursor, "nombre");
+          final int _cursorIndexOfImagenUrl = CursorUtil.getColumnIndexOrThrow(_cursor, "imagenUrl");
+          final int _cursorIndexOfCantidad = CursorUtil.getColumnIndexOrThrow(_cursor, "cantidad");
+          final int _cursorIndexOfCantidadMinima = CursorUtil.getColumnIndexOrThrow(_cursor, "cantidad_minima");
+          final int _cursorIndexOfHabilitado = CursorUtil.getColumnIndexOrThrow(_cursor, "habilitado");
+          final int _cursorIndexOfUltimaInteraccion = CursorUtil.getColumnIndexOrThrow(_cursor, "ultima_interaccion");
+          final ProductoEntity _result;
+          if (_cursor.moveToFirst()) {
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpNombre;
+            _tmpNombre = _cursor.getString(_cursorIndexOfNombre);
+            final String _tmpImagenUrl;
+            if (_cursor.isNull(_cursorIndexOfImagenUrl)) {
+              _tmpImagenUrl = null;
+            } else {
+              _tmpImagenUrl = _cursor.getString(_cursorIndexOfImagenUrl);
+            }
+            final int _tmpCantidad;
+            _tmpCantidad = _cursor.getInt(_cursorIndexOfCantidad);
+            final int _tmpCantidadMinima;
+            _tmpCantidadMinima = _cursor.getInt(_cursorIndexOfCantidadMinima);
+            final boolean _tmpHabilitado;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfHabilitado);
+            _tmpHabilitado = _tmp != 0;
+            final long _tmpUltimaInteraccion;
+            _tmpUltimaInteraccion = _cursor.getLong(_cursorIndexOfUltimaInteraccion);
+            _result = new ProductoEntity(_tmpId,_tmpNombre,_tmpImagenUrl,_tmpCantidad,_tmpCantidadMinima,_tmpHabilitado,_tmpUltimaInteraccion);
+          } else {
+            _result = null;
           }
           return _result;
         } finally {

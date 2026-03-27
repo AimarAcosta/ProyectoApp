@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ficha del Producto"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#333333"/>
+
+    <EditText
+        android:id="@+id/etNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nombre del Producto (Ej: Manzanas)"
+        android:inputType="textCapWords"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Stock Inicial (Ej: 100)"
+        android:inputType="number"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etCantidadMinima"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Alarma de Stock Mínimo (Ej: 20)"
+        android:inputType="number"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbProductoHabilitado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Producto visible en el inventario"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnGuardarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Guardar Producto"
+        android:backgroundTint="#4CAF50"/>
+
+    <Button
+        android:id="@+id/btnEliminarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Eliminar Definitivamente"
+        android:backgroundTint="#FF5252"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnCancelarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Cancelar y Volver"
+        android:backgroundTint="#B0BEC5"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
