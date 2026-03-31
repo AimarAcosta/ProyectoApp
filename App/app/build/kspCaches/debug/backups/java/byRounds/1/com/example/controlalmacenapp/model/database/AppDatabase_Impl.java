@@ -11,8 +11,12 @@ import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
+import com.example.controlalmacenapp.model.dao.AlbaranDao;
+import com.example.controlalmacenapp.model.dao.AlbaranDao_Impl;
 import com.example.controlalmacenapp.model.dao.ProductoDao;
 import com.example.controlalmacenapp.model.dao.ProductoDao_Impl;
+import com.example.controlalmacenapp.model.dao.ProveedorDao;
+import com.example.controlalmacenapp.model.dao.ProveedorDao_Impl;
 import com.example.controlalmacenapp.model.dao.UsuarioDao;
 import com.example.controlalmacenapp.model.dao.UsuarioDao_Impl;
 import java.lang.Class;
@@ -35,19 +39,23 @@ public final class AppDatabase_Impl extends AppDatabase {
 
   private volatile ProductoDao _productoDao;
 
+  private volatile ProveedorDao _proveedorDao;
+
+  private volatile AlbaranDao _albaranDao;
+
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(3) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `usuarios` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT NOT NULL, `imagenUrl` TEXT, `es_administrador` INTEGER NOT NULL, `password` TEXT, `email` TEXT, `habilitado` INTEGER NOT NULL)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `productos` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT NOT NULL, `imagenUrl` TEXT, `cantidad` INTEGER NOT NULL, `cantidad_minima` INTEGER NOT NULL, `habilitado` INTEGER NOT NULL, `ultima_interaccion` INTEGER NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `proveedores` (`cif` TEXT NOT NULL, `nombre` TEXT NOT NULL, PRIMARY KEY(`cif`))");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `albaranes` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `proveedor_cif` TEXT NOT NULL, `importe` REAL NOT NULL, `pagado` INTEGER NOT NULL, `fecha_pago` INTEGER, `foto_uri` TEXT, FOREIGN KEY(`proveedor_cif`) REFERENCES `proveedores`(`cif`) ON UPDATE NO ACTION ON DELETE RESTRICT )");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `proveedores` (`cif` TEXT NOT NULL, `nombre` TEXT NOT NULL, `telefono` TEXT NOT NULL, `email` TEXT NOT NULL, `habilitado` INTEGER NOT NULL, PRIMARY KEY(`cif`))");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `albaranes` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `proveedor_cif` TEXT NOT NULL, `fecha_emision` INTEGER NOT NULL, `importe` REAL NOT NULL, `pagado` INTEGER NOT NULL, `fecha_pago` INTEGER, `foto_uri` TEXT, FOREIGN KEY(`proveedor_cif`) REFERENCES `proveedores`(`cif`) ON UPDATE NO ACTION ON DELETE RESTRICT )");
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_albaranes_proveedor_cif` ON `albaranes` (`proveedor_cif`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fe36b2fc5f94b3074767e348082acc3d')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9d9957343be092c95feadbcf0aefb201')");
       }
 
       @Override
@@ -134,9 +142,12 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoProductos + "\n"
                   + " Found:\n" + _existingProductos);
         }
-        final HashMap<String, TableInfo.Column> _columnsProveedores = new HashMap<String, TableInfo.Column>(2);
+        final HashMap<String, TableInfo.Column> _columnsProveedores = new HashMap<String, TableInfo.Column>(5);
         _columnsProveedores.put("cif", new TableInfo.Column("cif", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProveedores.put("nombre", new TableInfo.Column("nombre", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProveedores.put("telefono", new TableInfo.Column("telefono", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProveedores.put("email", new TableInfo.Column("email", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProveedores.put("habilitado", new TableInfo.Column("habilitado", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysProveedores = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesProveedores = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoProveedores = new TableInfo("proveedores", _columnsProveedores, _foreignKeysProveedores, _indicesProveedores);
@@ -146,9 +157,10 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoProveedores + "\n"
                   + " Found:\n" + _existingProveedores);
         }
-        final HashMap<String, TableInfo.Column> _columnsAlbaranes = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsAlbaranes = new HashMap<String, TableInfo.Column>(7);
         _columnsAlbaranes.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAlbaranes.put("proveedor_cif", new TableInfo.Column("proveedor_cif", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsAlbaranes.put("fecha_emision", new TableInfo.Column("fecha_emision", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAlbaranes.put("importe", new TableInfo.Column("importe", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAlbaranes.put("pagado", new TableInfo.Column("pagado", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAlbaranes.put("fecha_pago", new TableInfo.Column("fecha_pago", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -166,7 +178,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "fe36b2fc5f94b3074767e348082acc3d", "9a03fabc32745edd27041bcd8dd0f330");
+    }, "9d9957343be092c95feadbcf0aefb201", "4c1fab888e6fae274da0675106548ee7");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;
@@ -216,6 +228,8 @@ public final class AppDatabase_Impl extends AppDatabase {
     final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
     _typeConvertersMap.put(UsuarioDao.class, UsuarioDao_Impl.getRequiredConverters());
     _typeConvertersMap.put(ProductoDao.class, ProductoDao_Impl.getRequiredConverters());
+    _typeConvertersMap.put(ProveedorDao.class, ProveedorDao_Impl.getRequiredConverters());
+    _typeConvertersMap.put(AlbaranDao.class, AlbaranDao_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -258,6 +272,34 @@ public final class AppDatabase_Impl extends AppDatabase {
           _productoDao = new ProductoDao_Impl(this);
         }
         return _productoDao;
+      }
+    }
+  }
+
+  @Override
+  public ProveedorDao proveedorDao() {
+    if (_proveedorDao != null) {
+      return _proveedorDao;
+    } else {
+      synchronized(this) {
+        if(_proveedorDao == null) {
+          _proveedorDao = new ProveedorDao_Impl(this);
+        }
+        return _proveedorDao;
+      }
+    }
+  }
+
+  @Override
+  public AlbaranDao albaranDao() {
+    if (_albaranDao != null) {
+      return _albaranDao;
+    } else {
+      synchronized(this) {
+        if(_albaranDao == null) {
+          _albaranDao = new AlbaranDao_Impl(this);
+        }
+        return _albaranDao;
       }
     }
   }

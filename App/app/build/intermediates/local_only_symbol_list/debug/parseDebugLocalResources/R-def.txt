@@ -19,6 +19,7 @@ id btnIrCrearUsuario
 id btnNuevoProducto
 id btnRestar
 id btnSumar
+id btnTomarFoto
 id btnVolver
 id cbAdmin
 id cbHabilitado
@@ -31,6 +32,7 @@ id etNombreProducto
 id etPassword
 id ivFoto
 id ivFotoUsuario
+id ivPreviewFoto
 id ivProducto
 id llPanelAdmin
 id logoImage
@@ -62,3 +64,4 @@ style Base.Theme.ControlAlmacenApp
 style Theme.ControlAlmacenApp
 xml backup_rules
 xml data_extraction_rules
+xml paths

@@ -3757,6 +3757,7 @@ id btnIrCrearUsuario
 id btnNuevoProducto
 id btnRestar
 id btnSumar
+id btnTomarFoto
 id btnVolver
 id buttonPanel
 id cache_measures
@@ -3902,6 +3903,7 @@ id italic
 id item_touch_helper_previous_elevation
 id ivFoto
 id ivFotoUsuario
+id ivPreviewFoto
 id ivProducto
 id jumpToEnd
 id jumpToStart
@@ -5975,3 +5977,4 @@ xml m3_button_group_child_size_change
 xml m3_split_button_inner_corner_size_state_list
 xml m3expressive_button_shape_state_list
 xml m3expressive_connected_buttons_inner_corner_size_state_list
+xml paths

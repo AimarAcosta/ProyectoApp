@@ -23,15 +23,18 @@ data class AlbaranEntity(
     @ColumnInfo(name = "proveedor_cif", index = true)
     val proveedorCif: String,
 
+    @ColumnInfo(name = "fecha_emision")
+    val fechaEmision: Long = System.currentTimeMillis(),
+
     @ColumnInfo(name = "importe")
     val importe: Double,
 
     @ColumnInfo(name = "pagado")
-    val pagado: Boolean,
+    val pagado: Boolean = false,
 
     @ColumnInfo(name = "fecha_pago")
-    val fechaPago: Long?,
+    val fechaPago: Long? = null,
 
     @ColumnInfo(name = "foto_uri")
-    val fotoUri: String?
+    val fotoUri: String? = null
 )

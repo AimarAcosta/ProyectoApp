@@ -1,5 +1,6 @@
 package com.example.controlalmacenapp.view
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.*
@@ -15,6 +16,8 @@ import kotlinx.coroutines.withContext
 
 class NuevoProductoActivity : BaseActivity() {
 
+    private lateinit var ivPreviewFoto: ImageView
+    private lateinit var btnTomarFoto: Button
     private lateinit var etNombre: EditText
     private lateinit var etCantidad: EditText
     private lateinit var etCantidadMinima: EditText
@@ -26,6 +29,7 @@ class NuevoProductoActivity : BaseActivity() {
     private lateinit var controller: ProductoController
     private var productoIdActual: Int = 0
     private var productoOriginal: ProductoEntity? = null
+    private var fotoRutaActual: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +38,8 @@ class NuevoProductoActivity : BaseActivity() {
         val db = AppDatabase.invoke(this)
         controller = ProductoController(db.productoDao())
 
+        ivPreviewFoto = findViewById(R.id.ivPreviewFoto)
+        btnTomarFoto = findViewById(R.id.btnTomarFoto)
         etNombre = findViewById(R.id.etNombreProducto)
         etCantidad = findViewById(R.id.etCantidad)
         etCantidadMinima = findViewById(R.id.etCantidadMinima)
@@ -49,7 +55,18 @@ class NuevoProductoActivity : BaseActivity() {
             btnEliminar.visibility = View.VISIBLE
             cargarDatosParaEdicion()
         } else {
-            cbHabilitado.isChecked = true // Por defecto activo al crear
+            cbHabilitado.isChecked = true
+        }
+
+        btnTomarFoto.setOnClickListener {
+            abrirCamara { uri ->
+                if (uri != null) {
+                    fotoRutaActual = uri.toString()
+                    ivPreviewFoto.setImageURI(uri)
+                } else {
+                    Toast.makeText(this, "Foto cancelada", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
 
         btnGuardar.setOnClickListener { guardarProducto() }
@@ -66,6 +83,11 @@ class NuevoProductoActivity : BaseActivity() {
                     etCantidad.setText(it.cantidad.toString())
                     etCantidadMinima.setText(it.cantidadMinima.toString())
                     cbHabilitado.isChecked = it.habilitado
+
+                    fotoRutaActual = it.imagenUrl ?: ""
+                    if (fotoRutaActual.isNotBlank()) {
+                        ivPreviewFoto.setImageURI(Uri.parse(fotoRutaActual))
+                    }
                 }
             }
         }
@@ -87,7 +109,7 @@ class NuevoProductoActivity : BaseActivity() {
         val productoAGuardar = ProductoEntity(
             id = productoIdActual,
             nombre = nombreStr,
-            imagenUrl = productoOriginal?.imagenUrl ?: "",
+            imagenUrl = fotoRutaActual,
             cantidad = cantidadFinal,
             cantidadMinima = minFinal,
             habilitado = cbHabilitado.isChecked,
@@ -106,7 +128,7 @@ class NuevoProductoActivity : BaseActivity() {
     private fun confirmarEliminacion() {
         AlertDialog.Builder(this)
             .setTitle("Eliminar Producto")
-            .setMessage("¿Estás seguro de que deseas eliminar este producto? Esto no se puede deshacer.")
+            .setMessage("¿Estás seguro de que deseas eliminar este producto?")
             .setPositiveButton("Eliminar") { _, _ ->
                 lifecycleScope.launch(Dispatchers.IO) {
                     productoOriginal?.let { controller.eliminarProducto(it) }

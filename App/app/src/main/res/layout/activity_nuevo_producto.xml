@@ -16,11 +16,29 @@
         android:layout_marginBottom="24dp"
         android:textColor="#333333"/>
 
+    <ImageView
+        android:id="@+id/ivPreviewFoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="#E0E0E0"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Tomar Foto"
+        android:backgroundTint="#2196F3" />
+
     <EditText
         android:id="@+id/etNombreProducto"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Nombre del Producto (Ej: Manzanas)"
+        android:hint="Nombre del Producto"
         android:inputType="textCapWords"
         android:background="#FFFFFF"
         android:paddingHorizontal="12dp"
@@ -30,7 +48,7 @@
         android:id="@+id/etCantidad"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Stock Inicial (Ej: 100)"
+        android:hint="Stock Inicial"
         android:inputType="number"
         android:background="#FFFFFF"
         android:paddingHorizontal="12dp"
@@ -40,7 +58,7 @@
         android:id="@+id/etCantidadMinima"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Alarma de Stock Mínimo (Ej: 20)"
+        android:hint="Alarma de Stock Mínimo"
         android:inputType="number"
         android:background="#FFFFFF"
         android:paddingHorizontal="12dp"

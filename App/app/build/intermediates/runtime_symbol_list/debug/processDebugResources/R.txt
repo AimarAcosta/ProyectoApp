@@ -3756,6 +3756,7 @@ int id btnIrCrearUsuario 0x7f08006e
 int id btnNuevoProducto 0x7f08006f
 int id btnRestar 0x7f080070
 int id btnSumar 0x7f080071
+int id btnTomarFoto 0x7f080226
 int id btnVolver 0x7f080072
 int id buttonPanel 0x7f080073
 int id cache_measures 0x7f080074
@@ -3901,6 +3902,7 @@ int id italic 0x7f0800ff
 int id item_touch_helper_previous_elevation 0x7f080100
 int id ivFoto 0x7f080101
 int id ivFotoUsuario 0x7f080102
+int id ivPreviewFoto 0x7f080227
 int id ivProducto 0x7f080103
 int id jumpToEnd 0x7f080104
 int id jumpToStart 0x7f080105
@@ -8000,3 +8002,4 @@ int xml m3_button_group_child_size_change 0x7f120002
 int xml m3_split_button_inner_corner_size_state_list 0x7f120003
 int xml m3expressive_button_shape_state_list 0x7f120004
 int xml m3expressive_connected_buttons_inner_corner_size_state_list 0x7f120005
+int xml paths 0x7f120006

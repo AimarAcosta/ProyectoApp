@@ -11,5 +11,14 @@ data class ProveedorEntity(
     val cif: String,
 
     @ColumnInfo(name = "nombre")
-    val nombre: String
+    val nombre: String,
+
+    @ColumnInfo(name = "telefono")
+    val telefono: String = "",
+
+    @ColumnInfo(name = "email")
+    val email: String = "",
+
+    @ColumnInfo(name = "habilitado")
+    val habilitado: Boolean = true
 )

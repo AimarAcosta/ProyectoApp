@@ -5,6 +5,14 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
+import android.os.Environment
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.FileProvider
+import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 open class BaseActivity : AppCompatActivity() {
 
@@ -40,5 +48,44 @@ open class BaseActivity : AppCompatActivity() {
 
     private fun detenerTemporizador() {
         timeoutHandler.removeCallbacks(timeoutRunnable)
+    }
+
+    private var fotoUriActual: Uri? = null
+
+    private var onFotoTomada: ((Uri?) -> Unit)? = null
+
+    private val tomarFotoLauncher = registerForActivityResult(ActivityResultContracts.TakePicture()) { exito ->
+        if (exito && fotoUriActual != null) {
+            onFotoTomada?.invoke(fotoUriActual)
+        } else {
+            onFotoTomada?.invoke(null)
+        }
+    }
+
+    fun abrirCamara(callback: (Uri?) -> Unit) {
+        onFotoTomada = callback
+        val archivoFoto = crearArchivoFisico()
+
+        if (archivoFoto != null) {
+            fotoUriActual = FileProvider.getUriForFile(
+                this,
+                "${applicationContext.packageName}.fileprovider",
+                archivoFoto
+            )
+            tomarFotoLauncher.launch(fotoUriActual!!)
+        } else {
+            callback(null)
+        }
+    }
+
+    private fun crearArchivoFisico(): File? {
+        return try {
+            val fecha = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
+            val directorio = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+            File.createTempFile("IMG_${fecha}_", ".jpg", directorio)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            null
+        }
     }
 }

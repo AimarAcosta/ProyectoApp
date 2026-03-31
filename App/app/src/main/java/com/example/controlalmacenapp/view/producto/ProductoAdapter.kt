@@ -38,6 +38,12 @@ class ProductoAdapter(
         holder.tvNombreProducto.text = producto.nombre
         holder.tvCantidad.text = "Stock: ${producto.cantidad}"
 
+        if (!producto.imagenUrl.isNullOrBlank()) {
+            holder.ivProducto.setImageURI(android.net.Uri.parse(producto.imagenUrl))
+        } else {
+            holder.ivProducto.setImageDrawable(null)
+        }
+
         if (producto.cantidad <= producto.cantidadMinima) {
             holder.tvCantidad.setTextColor(Color.RED)
             holder.tvCantidad.text = "Stock: ${producto.cantidad} ⚠️ (Crítico)"
