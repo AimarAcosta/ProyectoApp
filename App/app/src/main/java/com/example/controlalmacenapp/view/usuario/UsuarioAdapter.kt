@@ -1,5 +1,6 @@
 package com.example.controlalmacenapp.view.usuario
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +30,8 @@ class UsuarioAdapter(
         val usuario = usuarios[position]
         holder.tvNombre.text = usuario.nombre
 
-        holder.ivFoto.setImageResource(R.drawable.perfil)
+        val uri = Uri.parse(usuario.imagenUrl)
+        holder.ivFoto.setImageURI(uri)
 
         holder.itemView.setOnClickListener { onUsuarioClick(usuario) }
     }

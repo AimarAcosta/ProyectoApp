@@ -14,6 +14,9 @@ import kotlinx.coroutines.withContext
 
 class NuevoUsuarioActivity : BaseActivity() {
 
+    private lateinit var ivFoto: ImageView
+
+    private lateinit var btnTomarFoto: Button
     private lateinit var etNombre: EditText
     private lateinit var cbAdmin: CheckBox
     private lateinit var cbHabilitado: CheckBox
@@ -26,10 +29,14 @@ class NuevoUsuarioActivity : BaseActivity() {
     private var nombreUsuarioEditar: String? = null
     private var usuarioIdActual: Int = 0
 
+    private var fotoRutaActual: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_usuario)
 
+        ivFoto = findViewById(R.id.ivFoto)
+        btnTomarFoto = findViewById(R.id.btnTomarFoto)
         etNombre = findViewById(R.id.etNombre)
         cbAdmin = findViewById(R.id.cbAdmin)
         cbHabilitado = findViewById(R.id.cbHabilitado)
@@ -69,6 +76,18 @@ class NuevoUsuarioActivity : BaseActivity() {
             cbHabilitado.isChecked = true
         }
 
+        btnTomarFoto.setOnClickListener {
+            abrirCamara { uri ->
+                if (uri != null) {
+                    fotoRutaActual = uri.toString()
+                    ivFoto.setImageURI(uri)
+                } else {
+                    Toast.makeText(this, "Foto cancelada", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+
         btnGuardar.setOnClickListener {
             val nombre = etNombre.text.toString()
             val password = etPassword.text.toString()
@@ -85,7 +104,7 @@ class NuevoUsuarioActivity : BaseActivity() {
                 email = etEmail.text.toString(),
                 esAdministrador = cbAdmin.isChecked,
                 habilitado = cbHabilitado.isChecked,
-                imagenUrl = ""
+                imagenUrl = fotoRutaActual
             )
 
             lifecycleScope.launch(Dispatchers.IO) {
