@@ -14,4 +14,6 @@ Aplicacion Android offline para la gestion de inventario y control de personal e
 
 ## Estado de los Sprints
 * Sprint 1: Completado (Mockups en Figma, repositorio y arquitectura base).
-* Sprint 2: En progreso (Modelo relacional de base de datos y logica de Login).
+* Sprint 2: Completado (Modelo relacional de base de datos y logica de Login).
+* Sprint 3: Completado (CRUD de productos, control de stock con alertas visuales y toma de fotografías).
+* Sprint 4: En progreso (Gestión de proveedores y registro de albaranes de entrada).
