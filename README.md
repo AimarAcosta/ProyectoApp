@@ -4,13 +4,13 @@ Aplicacion Android offline para la gestion de inventario y control de personal e
 
 ## Datos del Proyecto
 * Centro: CIFP Elorrieta Erreka Mari LHII
-* Desarrollador: Aimar Acosta
+* Desarrollador: Aimar Acosta y Xabier Oñederra
 
 ## Tecnologias y Arquitectura
 * Lenguaje: Kotlin
 * Interfaz: Vistas clasicas (XML)
-* Base de Datos: Room (SQLite)
-* Arquitectura: MVC (Model-View-Controller)
+* Base de Datos: Room
+* Arquitectura: MVC (Modelo-Vista-Controlador)
 
 ## Estado de los Sprints
 * Sprint 1: Completado (Mockups en Figma, repositorio y arquitectura base).
