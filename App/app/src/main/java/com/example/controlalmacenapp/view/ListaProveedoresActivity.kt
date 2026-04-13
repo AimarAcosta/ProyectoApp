@@ -58,6 +58,10 @@ class ListaProveedoresActivity : BaseActivity() {
                     adapter = ProveedorAdapter(
                         proveedores = lista,
                         onItemClick = { proveedor ->
+                            val intent = Intent(this@ListaProveedoresActivity, ListaAlbaranesActivity::class.java)
+                            intent.putExtra("PROVEEDOR_CIF", proveedor.cif)
+                            intent.putExtra("PROVEEDOR_NOMBRE", proveedor.nombre)
+                            startActivity(intent)
                         }
                     )
                     rvProveedores.adapter = adapter

@@ -4,10 +4,6 @@
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.controlalmacenapp-debug-37:/layout_activity_lista_proveedores.xml.flat",
-        "source": "com.example.controlalmacenapp-main-39:/layout/activity_lista_proveedores.xml"
-    },
-    {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -64,6 +60,10 @@
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_lista_usuarios.xml"
     },
     {
+        "merged": "com.example.controlalmacenapp-debug-37:/layout_activity_lista_albaranes.xml.flat",
+        "source": "com.example.controlalmacenapp-main-39:/layout/activity_lista_albaranes.xml"
+    },
+    {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -94,6 +94,18 @@
     {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_albaran.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\item_albaran.xml"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_lista_albaranes.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_lista_albaranes.xml"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_albaran.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_albaran.xml"
     },
     {
         "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_usuario.xml.flat",

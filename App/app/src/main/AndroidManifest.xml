@@ -32,8 +32,9 @@
             android:name=".view.ListaUsuariosActivity"
             android:exported="false" />
         <activity android:name=".view.ListaProveedoresActivity" />
-        <activity android:name=".view.ListaProveedoresActivity" />
+        <activity android:name=".view.NuevoAlbaranActivity" />
         <activity android:name=".view.NuevoProveedorActivity" />
+        <activity android:name=".view.ListaAlbaranesActivity" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

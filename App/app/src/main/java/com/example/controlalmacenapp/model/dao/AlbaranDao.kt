@@ -24,4 +24,7 @@ interface AlbaranDao {
 
     @Query("SELECT * FROM albaranes WHERE pagado = 0 ORDER BY fecha_emision ASC")
     suspend fun obtenerAlbaranesPendientes(): List<AlbaranEntity>
+
+    @Query("SELECT * FROM albaranes WHERE id = :id")
+    suspend fun obtenerAlbaranPorId(id: Int): AlbaranEntity?
 }

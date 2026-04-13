@@ -48,8 +48,9 @@
             android:name="com.example.controlalmacenapp.view.ListaUsuariosActivity"
             android:exported="false" />
         <activity android:name="com.example.controlalmacenapp.view.ListaProveedoresActivity" />
-        <activity android:name="com.example.controlalmacenapp.view.ListaProveedoresActivity" />
+        <activity android:name="com.example.controlalmacenapp.view.NuevoAlbaranActivity" />
         <activity android:name="com.example.controlalmacenapp.view.NuevoProveedorActivity" />
+        <activity android:name="com.example.controlalmacenapp.view.ListaAlbaranesActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
