@@ -1,118 +1,130 @@
 [
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_baseline_plus_one_24.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\baseline_plus_one_24.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_producto.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\item_producto.xml"
+        "merged": "com.example.controlalmacenapp-debug-37:/layout_activity_lista_proveedores.xml.flat",
+        "source": "com.example.controlalmacenapp-main-39:/layout/activity_lista_proveedores.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_usuario.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\item_usuario.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_logo_elorrieta.png.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\logo_elorrieta.png"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_menu_principal.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_menu_principal.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_proveedor.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\item_proveedor.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_lista_usuarios.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_lista_usuarios.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.controlalmacenapp-debug-37:/layout_item_usuario.xml.flat",
-        "source": "com.example.controlalmacenapp-main-39:/layout/item_usuario.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_producto.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_producto.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_menu_principal.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_menu_principal.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_inicio.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_inicio.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_lista_usuarios.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_lista_usuarios.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_paths.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\paths.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_usuario.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_usuario.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_perfil.png.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\perfil.png"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_lista_proveedores.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_lista_proveedores.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_producto.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_producto.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_perfil.png.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\perfil.png"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_proveedor.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_proveedor.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_nuevo_usuario.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_nuevo_usuario.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_activity_inicio.xml.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\activity_inicio.xml"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_usuario.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\item_usuario.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_baseline_plus_one_24.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\baseline_plus_one_24.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_logo_elorrieta.png.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\logo_elorrieta.png"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\layout_item_producto.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\layout\\item_producto.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\xabie\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-debug-37:\\xml_paths.xml.flat",
+        "source": "C:\\Users\\acost\\.gradle\\daemon\\8.13\\com.example.controlalmacenapp-main-39:\\xml\\paths.xml"
     }
 ]

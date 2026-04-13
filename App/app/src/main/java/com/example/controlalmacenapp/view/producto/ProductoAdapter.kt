@@ -15,6 +15,8 @@ class ProductoAdapter(
     private var productos: List<ProductoEntity>,
     private val onSumarClick: (ProductoEntity) -> Unit,
     private val onRestarClick: (ProductoEntity) -> Unit,
+    private val onSumarCincoClick: (ProductoEntity) -> Unit,  // <-- Canal Nuevo
+    private val onRestarCincoClick: (ProductoEntity) -> Unit, // <-- Canal Nuevo
     private val onItemClick: (ProductoEntity) -> Unit
 ) : RecyclerView.Adapter<ProductoAdapter.ProductoViewHolder>() {
 
@@ -24,6 +26,8 @@ class ProductoAdapter(
         val tvCantidad: TextView = view.findViewById(R.id.tvCantidad)
         val btnSumar: Button = view.findViewById(R.id.btnSumar)
         val btnRestar: Button = view.findViewById(R.id.btnRestar)
+        val btnRestarCinco: Button = view.findViewById(R.id.btnRestarCinco)
+        val btnSumarCinco: Button = view.findViewById(R.id.btnSumarCinco)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductoViewHolder {
@@ -51,8 +55,11 @@ class ProductoAdapter(
             holder.tvCantidad.setTextColor(Color.parseColor("#333333"))
         }
 
+        // Enviamos la señal al apretar los botones
         holder.btnSumar.setOnClickListener { onSumarClick(producto) }
         holder.btnRestar.setOnClickListener { onRestarClick(producto) }
+        holder.btnSumarCinco.setOnClickListener { onSumarCincoClick(producto) }
+        holder.btnRestarCinco.setOnClickListener { onRestarCincoClick(producto) }
 
         holder.itemView.setOnClickListener { onItemClick(producto) }
     }

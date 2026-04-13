@@ -41,6 +41,7 @@ class MenuPrincipalActivity : BaseActivity() {
         val llPanelAdmin = findViewById<LinearLayout>(R.id.llPanelAdmin)
         val btnGestionUsuarios = findViewById<Button>(R.id.btnGestionUsuarios)
         val btnNuevoProducto = findViewById<Button>(R.id.btnNuevoProducto)
+        val btnGestionProveedores = findViewById<Button>(R.id.btnGestionProveedores)
 
         if (esAdmin) {
             llPanelAdmin.visibility = View.VISIBLE
@@ -49,6 +50,9 @@ class MenuPrincipalActivity : BaseActivity() {
             }
             btnNuevoProducto.setOnClickListener {
                 startActivity(Intent(this, NuevoProductoActivity::class.java))
+            }
+            btnGestionProveedores.setOnClickListener {
+                startActivity(Intent(this, ListaProveedoresActivity::class.java))
             }
         } else {
             llPanelAdmin.visibility = View.GONE
@@ -88,6 +92,27 @@ class MenuPrincipalActivity : BaseActivity() {
                                 withContext(Dispatchers.Main) {
                                     if (!exito) Toast.makeText(this@MenuPrincipalActivity, "El stock ya es 0", Toast.LENGTH_SHORT).show()
                                     cargarInventario()
+                                }
+                            }
+                        },
+                        onSumarCincoClick = { producto ->
+                            lifecycleScope.launch(Dispatchers.IO) {
+                                val nuevoStock = producto.cantidad + 5
+                                controller.guardarProducto(producto.copy(cantidad = nuevoStock))
+                                cargarInventario()
+                            }
+                        },
+                        onRestarCincoClick = { producto ->
+                            lifecycleScope.launch(Dispatchers.IO) {
+                                if (producto.cantidad > 0) {
+                                    // Blindaje de seguridad: nunca bajar de 0
+                                    val nuevoStock = if (producto.cantidad - 5 < 0) 0 else producto.cantidad - 5
+                                    controller.guardarProducto(producto.copy(cantidad = nuevoStock))
+                                    cargarInventario()
+                                } else {
+                                    withContext(Dispatchers.Main) {
+                                        Toast.makeText(this@MenuPrincipalActivity, "El stock ya es 0", Toast.LENGTH_SHORT).show()
+                                    }
                                 }
                             }
                         },

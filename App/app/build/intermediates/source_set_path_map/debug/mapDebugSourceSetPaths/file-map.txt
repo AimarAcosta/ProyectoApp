@@ -1,41 +1,41 @@
-com.example.controlalmacenapp-graphics-shapes-release-0 C:\Users\xabie\.gradle\caches\8.13\transforms\055399663bd36333490e4e0d07522400\transformed\graphics-shapes-release\res
-com.example.controlalmacenapp-lifecycle-process-2.6.2-1 C:\Users\xabie\.gradle\caches\8.13\transforms\0abb6ba7ebb115a21419769c0264b3d4\transformed\lifecycle-process-2.6.2\res
-com.example.controlalmacenapp-lifecycle-viewmodel-2.6.2-2 C:\Users\xabie\.gradle\caches\8.13\transforms\0eba6cc243b8539c4f3655090a148643\transformed\lifecycle-viewmodel-2.6.2\res
-com.example.controlalmacenapp-appcompat-resources-1.7.0-3 C:\Users\xabie\.gradle\caches\8.13\transforms\109cabe5eb01712143cd325f28191899\transformed\appcompat-resources-1.7.0\res
-com.example.controlalmacenapp-lifecycle-runtime-2.6.2-4 C:\Users\xabie\.gradle\caches\8.13\transforms\15a55ca937dc5ec85f5065b0801540e0\transformed\lifecycle-runtime-2.6.2\res
-com.example.controlalmacenapp-room-ktx-2.6.1-5 C:\Users\xabie\.gradle\caches\8.13\transforms\2354c5d2b3fbe9beb70ebb252f890fb4\transformed\room-ktx-2.6.1\res
-com.example.controlalmacenapp-appcompat-1.7.0-6 C:\Users\xabie\.gradle\caches\8.13\transforms\29aa22b5b41d2c70084ce557a2d89b63\transformed\appcompat-1.7.0\res
-com.example.controlalmacenapp-dynamicanimation-1.1.0-7 C:\Users\xabie\.gradle\caches\8.13\transforms\2f7c3670824f3301635c0e9dd5ad6673\transformed\dynamicanimation-1.1.0\res
-com.example.controlalmacenapp-savedstate-1.2.1-8 C:\Users\xabie\.gradle\caches\8.13\transforms\339f02a2950f8c6c08cf52af94440bc7\transformed\savedstate-1.2.1\res
-com.example.controlalmacenapp-core-1.13.0-9 C:\Users\xabie\.gradle\caches\8.13\transforms\492573391c64e72e983fc93b3b2957dd\transformed\core-1.13.0\res
-com.example.controlalmacenapp-room-runtime-2.6.1-10 C:\Users\xabie\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\res
-com.example.controlalmacenapp-viewpager2-1.0.0-11 C:\Users\xabie\.gradle\caches\8.13\transforms\53def6e9e8113df623be38c5ea80e79e\transformed\viewpager2-1.0.0\res
-com.example.controlalmacenapp-emoji2-1.3.0-12 C:\Users\xabie\.gradle\caches\8.13\transforms\54553a0d499336b48a85aaea4adf4439\transformed\emoji2-1.3.0\res
-com.example.controlalmacenapp-profileinstaller-1.3.1-13 C:\Users\xabie\.gradle\caches\8.13\transforms\54b0cd6ad8c466280cc18017a12a0cff\transformed\profileinstaller-1.3.1\res
-com.example.controlalmacenapp-annotation-experimental-1.4.1-14 C:\Users\xabie\.gradle\caches\8.13\transforms\60b0fa7012811d886c498fccd3b1e249\transformed\annotation-experimental-1.4.1\res
-com.example.controlalmacenapp-transition-1.5.0-15 C:\Users\xabie\.gradle\caches\8.13\transforms\682a5e4b69147ef24e5da62e18378379\transformed\transition-1.5.0\res
-com.example.controlalmacenapp-core-runtime-2.2.0-16 C:\Users\xabie\.gradle\caches\8.13\transforms\72c4c78a5fddfddc854eecb954e12e8e\transformed\core-runtime-2.2.0\res
-com.example.controlalmacenapp-core-ktx-1.13.0-17 C:\Users\xabie\.gradle\caches\8.13\transforms\9f77577708f40b71effe3bf7d9d3b2fd\transformed\core-ktx-1.13.0\res
-com.example.controlalmacenapp-lifecycle-viewmodel-savedstate-2.6.2-18 C:\Users\xabie\.gradle\caches\8.13\transforms\acec7eb1f6faa151f8e94d2d51298844\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
-com.example.controlalmacenapp-coordinatorlayout-1.1.0-19 C:\Users\xabie\.gradle\caches\8.13\transforms\b107ed61a144efc01fbbe17972c32b4c\transformed\coordinatorlayout-1.1.0\res
-com.example.controlalmacenapp-recyclerview-1.2.1-20 C:\Users\xabie\.gradle\caches\8.13\transforms\b4290e5f96ff3202e08ba1e300be2560\transformed\recyclerview-1.2.1\res
-com.example.controlalmacenapp-emoji2-views-helper-1.3.0-21 C:\Users\xabie\.gradle\caches\8.13\transforms\b73894284454972b5e71d446c80f7a3c\transformed\emoji2-views-helper-1.3.0\res
-com.example.controlalmacenapp-lifecycle-livedata-core-2.6.2-22 C:\Users\xabie\.gradle\caches\8.13\transforms\bbe099f0436ee33fadf54758f1b9dcbd\transformed\lifecycle-livedata-core-2.6.2\res
-com.example.controlalmacenapp-drawerlayout-1.1.1-23 C:\Users\xabie\.gradle\caches\8.13\transforms\c25a79f082fbb3f46d5a105b21448526\transformed\drawerlayout-1.1.1\res
-com.example.controlalmacenapp-startup-runtime-1.1.1-24 C:\Users\xabie\.gradle\caches\8.13\transforms\c9b5958fcf5137171a6bc86b389d5c76\transformed\startup-runtime-1.1.1\res
-com.example.controlalmacenapp-cardview-1.0.0-25 C:\Users\xabie\.gradle\caches\8.13\transforms\ce9fefcc87b6f470898cafdd11465307\transformed\cardview-1.0.0\res
-com.example.controlalmacenapp-lifecycle-livedata-2.6.2-26 C:\Users\xabie\.gradle\caches\8.13\transforms\d204d79f8f8edf20f346d95343851a38\transformed\lifecycle-livedata-2.6.2\res
-com.example.controlalmacenapp-fragment-1.5.4-27 C:\Users\xabie\.gradle\caches\8.13\transforms\dcfafeb2cc623220ffb6f9b0234049a4\transformed\fragment-1.5.4\res
-com.example.controlalmacenapp-sqlite-framework-2.4.0-28 C:\Users\xabie\.gradle\caches\8.13\transforms\dd227039aab327a0f031370cc1a7334e\transformed\sqlite-framework-2.4.0\res
-com.example.controlalmacenapp-constraintlayout-2.1.4-29 C:\Users\xabie\.gradle\caches\8.13\transforms\e0448a40dd0626d1afdf7ad9250f2ed6\transformed\constraintlayout-2.1.4\res
-com.example.controlalmacenapp-material-1.13.0-30 C:\Users\xabie\.gradle\caches\8.13\transforms\ede871242254aacb1d2646eca5624006\transformed\material-1.13.0\res
-com.example.controlalmacenapp-sqlite-2.4.0-31 C:\Users\xabie\.gradle\caches\8.13\transforms\f5557a19163afb04cd4ba930d033a85a\transformed\sqlite-2.4.0\res
-com.example.controlalmacenapp-activity-1.8.0-32 C:\Users\xabie\.gradle\caches\8.13\transforms\fbadcdc2e1dea8de2495fedac186e810\transformed\activity-1.8.0\res
-com.example.controlalmacenapp-pngs-33 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\build\generated\res\pngs\debug
-com.example.controlalmacenapp-resValues-34 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\build\generated\res\resValues\debug
-com.example.controlalmacenapp-updated_navigation_xml-35 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\build\generated\updated_navigation_xml\debug
-com.example.controlalmacenapp-packageDebugResources-36 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.controlalmacenapp-packageDebugResources-37 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.controlalmacenapp-debug-38 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.controlalmacenapp-debug-39 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\src\debug\res
-com.example.controlalmacenapp-main-40 C:\Users\xabie\Desktop\Proyecto practicas\ProyectoApp\App\app\src\main\res
+com.example.controlalmacenapp-graphics-shapes-release-0 C:\Users\acost\.gradle\caches\8.13\transforms\055399663bd36333490e4e0d07522400\transformed\graphics-shapes-release\res
+com.example.controlalmacenapp-lifecycle-process-2.6.2-1 C:\Users\acost\.gradle\caches\8.13\transforms\0abb6ba7ebb115a21419769c0264b3d4\transformed\lifecycle-process-2.6.2\res
+com.example.controlalmacenapp-lifecycle-viewmodel-2.6.2-2 C:\Users\acost\.gradle\caches\8.13\transforms\0eba6cc243b8539c4f3655090a148643\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.controlalmacenapp-appcompat-resources-1.7.0-3 C:\Users\acost\.gradle\caches\8.13\transforms\109cabe5eb01712143cd325f28191899\transformed\appcompat-resources-1.7.0\res
+com.example.controlalmacenapp-lifecycle-runtime-2.6.2-4 C:\Users\acost\.gradle\caches\8.13\transforms\15a55ca937dc5ec85f5065b0801540e0\transformed\lifecycle-runtime-2.6.2\res
+com.example.controlalmacenapp-room-ktx-2.6.1-5 C:\Users\acost\.gradle\caches\8.13\transforms\2354c5d2b3fbe9beb70ebb252f890fb4\transformed\room-ktx-2.6.1\res
+com.example.controlalmacenapp-appcompat-1.7.0-6 C:\Users\acost\.gradle\caches\8.13\transforms\29aa22b5b41d2c70084ce557a2d89b63\transformed\appcompat-1.7.0\res
+com.example.controlalmacenapp-dynamicanimation-1.1.0-7 C:\Users\acost\.gradle\caches\8.13\transforms\2f7c3670824f3301635c0e9dd5ad6673\transformed\dynamicanimation-1.1.0\res
+com.example.controlalmacenapp-savedstate-1.2.1-8 C:\Users\acost\.gradle\caches\8.13\transforms\339f02a2950f8c6c08cf52af94440bc7\transformed\savedstate-1.2.1\res
+com.example.controlalmacenapp-core-1.13.0-9 C:\Users\acost\.gradle\caches\8.13\transforms\492573391c64e72e983fc93b3b2957dd\transformed\core-1.13.0\res
+com.example.controlalmacenapp-room-runtime-2.6.1-10 C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\res
+com.example.controlalmacenapp-viewpager2-1.0.0-11 C:\Users\acost\.gradle\caches\8.13\transforms\53def6e9e8113df623be38c5ea80e79e\transformed\viewpager2-1.0.0\res
+com.example.controlalmacenapp-emoji2-1.3.0-12 C:\Users\acost\.gradle\caches\8.13\transforms\54553a0d499336b48a85aaea4adf4439\transformed\emoji2-1.3.0\res
+com.example.controlalmacenapp-profileinstaller-1.3.1-13 C:\Users\acost\.gradle\caches\8.13\transforms\54b0cd6ad8c466280cc18017a12a0cff\transformed\profileinstaller-1.3.1\res
+com.example.controlalmacenapp-annotation-experimental-1.4.1-14 C:\Users\acost\.gradle\caches\8.13\transforms\60b0fa7012811d886c498fccd3b1e249\transformed\annotation-experimental-1.4.1\res
+com.example.controlalmacenapp-transition-1.5.0-15 C:\Users\acost\.gradle\caches\8.13\transforms\682a5e4b69147ef24e5da62e18378379\transformed\transition-1.5.0\res
+com.example.controlalmacenapp-core-runtime-2.2.0-16 C:\Users\acost\.gradle\caches\8.13\transforms\72c4c78a5fddfddc854eecb954e12e8e\transformed\core-runtime-2.2.0\res
+com.example.controlalmacenapp-core-ktx-1.13.0-17 C:\Users\acost\.gradle\caches\8.13\transforms\9f77577708f40b71effe3bf7d9d3b2fd\transformed\core-ktx-1.13.0\res
+com.example.controlalmacenapp-lifecycle-viewmodel-savedstate-2.6.2-18 C:\Users\acost\.gradle\caches\8.13\transforms\acec7eb1f6faa151f8e94d2d51298844\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.controlalmacenapp-coordinatorlayout-1.1.0-19 C:\Users\acost\.gradle\caches\8.13\transforms\b107ed61a144efc01fbbe17972c32b4c\transformed\coordinatorlayout-1.1.0\res
+com.example.controlalmacenapp-recyclerview-1.2.1-20 C:\Users\acost\.gradle\caches\8.13\transforms\b4290e5f96ff3202e08ba1e300be2560\transformed\recyclerview-1.2.1\res
+com.example.controlalmacenapp-emoji2-views-helper-1.3.0-21 C:\Users\acost\.gradle\caches\8.13\transforms\b73894284454972b5e71d446c80f7a3c\transformed\emoji2-views-helper-1.3.0\res
+com.example.controlalmacenapp-lifecycle-livedata-core-2.6.2-22 C:\Users\acost\.gradle\caches\8.13\transforms\bbe099f0436ee33fadf54758f1b9dcbd\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.controlalmacenapp-drawerlayout-1.1.1-23 C:\Users\acost\.gradle\caches\8.13\transforms\c25a79f082fbb3f46d5a105b21448526\transformed\drawerlayout-1.1.1\res
+com.example.controlalmacenapp-startup-runtime-1.1.1-24 C:\Users\acost\.gradle\caches\8.13\transforms\c9b5958fcf5137171a6bc86b389d5c76\transformed\startup-runtime-1.1.1\res
+com.example.controlalmacenapp-cardview-1.0.0-25 C:\Users\acost\.gradle\caches\8.13\transforms\ce9fefcc87b6f470898cafdd11465307\transformed\cardview-1.0.0\res
+com.example.controlalmacenapp-lifecycle-livedata-2.6.2-26 C:\Users\acost\.gradle\caches\8.13\transforms\d204d79f8f8edf20f346d95343851a38\transformed\lifecycle-livedata-2.6.2\res
+com.example.controlalmacenapp-fragment-1.5.4-27 C:\Users\acost\.gradle\caches\8.13\transforms\dcfafeb2cc623220ffb6f9b0234049a4\transformed\fragment-1.5.4\res
+com.example.controlalmacenapp-sqlite-framework-2.4.0-28 C:\Users\acost\.gradle\caches\8.13\transforms\dd227039aab327a0f031370cc1a7334e\transformed\sqlite-framework-2.4.0\res
+com.example.controlalmacenapp-constraintlayout-2.1.4-29 C:\Users\acost\.gradle\caches\8.13\transforms\e0448a40dd0626d1afdf7ad9250f2ed6\transformed\constraintlayout-2.1.4\res
+com.example.controlalmacenapp-material-1.13.0-30 C:\Users\acost\.gradle\caches\8.13\transforms\ede871242254aacb1d2646eca5624006\transformed\material-1.13.0\res
+com.example.controlalmacenapp-sqlite-2.4.0-31 C:\Users\acost\.gradle\caches\8.13\transforms\f5557a19163afb04cd4ba930d033a85a\transformed\sqlite-2.4.0\res
+com.example.controlalmacenapp-activity-1.8.0-32 C:\Users\acost\.gradle\caches\8.13\transforms\fbadcdc2e1dea8de2495fedac186e810\transformed\activity-1.8.0\res
+com.example.controlalmacenapp-pngs-33 C:\Users\acost\Downloads\ProyectoApp\App\app\build\generated\res\pngs\debug
+com.example.controlalmacenapp-resValues-34 C:\Users\acost\Downloads\ProyectoApp\App\app\build\generated\res\resValues\debug
+com.example.controlalmacenapp-updated_navigation_xml-35 C:\Users\acost\Downloads\ProyectoApp\App\app\build\generated\updated_navigation_xml\debug
+com.example.controlalmacenapp-packageDebugResources-36 C:\Users\acost\Downloads\ProyectoApp\App\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.controlalmacenapp-packageDebugResources-37 C:\Users\acost\Downloads\ProyectoApp\App\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.controlalmacenapp-debug-38 C:\Users\acost\Downloads\ProyectoApp\App\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.controlalmacenapp-debug-39 C:\Users\acost\Downloads\ProyectoApp\App\app\src\debug\res
+com.example.controlalmacenapp-main-40 C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\res
