@@ -3529,6 +3529,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_plus_one_24
+drawable borde_celda_excel
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3755,6 +3756,9 @@ id btnCerrarVisor
 id btnEliminar
 id btnEliminarProducto
 id btnEscanearAlbaran
+id btnFiltroDeshabilitados
+id btnFiltroMinimo
+id btnFiltroTodos
 id btnGestionProveedores
 id btnGestionUsuarios
 id btnGuardar
@@ -3762,6 +3766,7 @@ id btnGuardarAlbaran
 id btnGuardarProducto
 id btnGuardarProveedor
 id btnInformeAlbaranes
+id btnInventarioExcel
 id btnIrCrearUsuario
 id btnNuevoAlbaran
 id btnNuevoProducto
@@ -3772,6 +3777,7 @@ id btnSumar
 id btnSumarCinco
 id btnTomarFoto
 id btnVolver
+id btnVolverInventario
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -4074,6 +4080,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvInventarioExcel
 id rvListaAlbaranes
 id rvListaProductos
 id rvListaProveedores
@@ -4195,6 +4202,10 @@ id tvBienvenida
 id tvCantidad
 id tvCif
 id tvEstadoPago
+id tvExcelCantidad
+id tvExcelEstado
+id tvExcelMinimo
+id tvExcelNombre
 id tvFechaAlbaran
 id tvImporteAlbaran
 id tvInfoAlbaran
@@ -4353,6 +4364,7 @@ layout abc_tooltip
 layout activity_detalle_albaran
 layout activity_informe_albaranes
 layout activity_inicio
+layout activity_inventario_excel
 layout activity_lista_albaranes
 layout activity_lista_proveedores
 layout activity_lista_usuarios
@@ -4381,6 +4393,7 @@ layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_albaran
+layout item_fila_excel
 layout item_producto
 layout item_proveedor
 layout item_usuario

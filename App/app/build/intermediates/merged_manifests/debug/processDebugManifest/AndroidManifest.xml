@@ -53,6 +53,7 @@
         <activity android:name="com.example.controlalmacenapp.view.ListaAlbaranesActivity" />
         <activity android:name="com.example.controlalmacenapp.view.InformeAlbaranesActivity" />
         <activity android:name="com.example.controlalmacenapp.view.DetalleAlbaranActivity" />
+        <activity android:name="com.example.controlalmacenapp.view.InventarioExcelActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

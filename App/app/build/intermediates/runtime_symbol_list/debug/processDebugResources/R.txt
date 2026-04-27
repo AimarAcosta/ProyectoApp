@@ -3528,6 +3528,7 @@ int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_plus_one_24 0x7f07007a
+int drawable borde_celda_excel 0x7f0700ed
 int drawable btn_checkbox_checked_mtrl 0x7f07007b
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007c
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007d
@@ -3754,6 +3755,9 @@ int id btnCerrarVisor 0x7f08024c
 int id btnEliminar 0x7f080069
 int id btnEliminarProducto 0x7f08006a
 int id btnEscanearAlbaran 0x7f08023a
+int id btnFiltroDeshabilitados 0x7f08024f
+int id btnFiltroMinimo 0x7f080250
+int id btnFiltroTodos 0x7f080251
 int id btnGestionProveedores 0x7f08022b
 int id btnGestionUsuarios 0x7f08006b
 int id btnGuardar 0x7f08006c
@@ -3761,6 +3765,7 @@ int id btnGuardarAlbaran 0x7f08023b
 int id btnGuardarProducto 0x7f08006d
 int id btnGuardarProveedor 0x7f080233
 int id btnInformeAlbaranes 0x7f080247
+int id btnInventarioExcel 0x7f080258
 int id btnIrCrearUsuario 0x7f08006e
 int id btnNuevoAlbaran 0x7f08023f
 int id btnNuevoProducto 0x7f08006f
@@ -3771,6 +3776,7 @@ int id btnSumar 0x7f080071
 int id btnSumarCinco 0x7f080229
 int id btnTomarFoto 0x7f080072
 int id btnVolver 0x7f080073
+int id btnVolverInventario 0x7f080252
 int id buttonPanel 0x7f080074
 int id cache_measures 0x7f080075
 int id callMeasure 0x7f080076
@@ -4073,6 +4079,7 @@ int id right_icon 0x7f080194
 int id right_side 0x7f080195
 int id rounded 0x7f080196
 int id row_index_key 0x7f080197
+int id rvInventarioExcel 0x7f080253
 int id rvListaAlbaranes 0x7f080240
 int id rvListaProductos 0x7f080198
 int id rvListaProveedores 0x7f08022d
@@ -4194,6 +4201,10 @@ int id tvBienvenida 0x7f08020b
 int id tvCantidad 0x7f08020c
 int id tvCif 0x7f08022f
 int id tvEstadoPago 0x7f080242
+int id tvExcelCantidad 0x7f080254
+int id tvExcelEstado 0x7f080255
+int id tvExcelMinimo 0x7f080256
+int id tvExcelNombre 0x7f080257
 int id tvFechaAlbaran 0x7f080243
 int id tvImporteAlbaran 0x7f080244
 int id tvInfoAlbaran 0x7f08024e
@@ -4352,6 +4363,7 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_detalle_albaran 0x7f0b007c
 int layout activity_informe_albaranes 0x7f0b007b
 int layout activity_inicio 0x7f0b001c
+int layout activity_inventario_excel 0x7f0b007d
 int layout activity_lista_albaranes 0x7f0b0079
 int layout activity_lista_proveedores 0x7f0b0075
 int layout activity_lista_usuarios 0x7f0b001d
@@ -4380,6 +4392,7 @@ int layout design_text_input_start_icon 0x7f0b0031
 int layout ime_base_split_test_activity 0x7f0b0032
 int layout ime_secondary_split_test_activity 0x7f0b0033
 int layout item_albaran 0x7f0b007a
+int layout item_fila_excel 0x7f0b007e
 int layout item_producto 0x7f0b0034
 int layout item_proveedor 0x7f0b0076
 int layout item_usuario 0x7f0b0035

@@ -3,6 +3,7 @@ local
 color black
 color white
 drawable baseline_plus_one_24
+drawable borde_celda_excel
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo_elorrieta
@@ -17,6 +18,9 @@ id btnCerrarVisor
 id btnEliminar
 id btnEliminarProducto
 id btnEscanearAlbaran
+id btnFiltroDeshabilitados
+id btnFiltroMinimo
+id btnFiltroTodos
 id btnGestionProveedores
 id btnGestionUsuarios
 id btnGuardar
@@ -24,6 +28,7 @@ id btnGuardarAlbaran
 id btnGuardarProducto
 id btnGuardarProveedor
 id btnInformeAlbaranes
+id btnInventarioExcel
 id btnIrCrearUsuario
 id btnNuevoAlbaran
 id btnNuevoProducto
@@ -34,6 +39,7 @@ id btnSumar
 id btnSumarCinco
 id btnTomarFoto
 id btnVolver
+id btnVolverInventario
 id cbAdmin
 id cbHabilitado
 id cbPagado
@@ -59,6 +65,7 @@ id ivVisorFoto
 id layoutBotonesStock
 id llPanelAdmin
 id logoImage
+id rvInventarioExcel
 id rvListaAlbaranes
 id rvListaProductos
 id rvListaProveedores
@@ -68,6 +75,10 @@ id tvBienvenida
 id tvCantidad
 id tvCif
 id tvEstadoPago
+id tvExcelCantidad
+id tvExcelEstado
+id tvExcelMinimo
+id tvExcelNombre
 id tvFechaAlbaran
 id tvImporteAlbaran
 id tvInfoAlbaran
@@ -86,6 +97,7 @@ id tvTotalImporte
 layout activity_detalle_albaran
 layout activity_informe_albaranes
 layout activity_inicio
+layout activity_inventario_excel
 layout activity_lista_albaranes
 layout activity_lista_proveedores
 layout activity_lista_usuarios
@@ -96,6 +108,7 @@ layout activity_nuevo_producto
 layout activity_nuevo_proveedor
 layout activity_nuevo_usuario
 layout item_albaran
+layout item_fila_excel
 layout item_producto
 layout item_proveedor
 layout item_usuario

@@ -43,6 +43,8 @@ class MenuPrincipalActivity : BaseActivity() {
         val btnNuevoProducto = findViewById<Button>(R.id.btnNuevoProducto)
         val btnGestionProveedores = findViewById<Button>(R.id.btnGestionProveedores)
 
+        val btnInventarioExcel = findViewById<Button>(R.id.btnInventarioExcel)
+
         if (esAdmin) {
             llPanelAdmin.visibility = View.VISIBLE
             btnGestionUsuarios.setOnClickListener {
@@ -53,6 +55,10 @@ class MenuPrincipalActivity : BaseActivity() {
             }
             btnGestionProveedores.setOnClickListener {
                 startActivity(Intent(this, ListaProveedoresActivity::class.java))
+            }
+            // Conectamos el botón de Excel SOLO si es administrador
+            btnInventarioExcel.setOnClickListener {
+                startActivity(Intent(this, InventarioExcelActivity::class.java))
             }
         } else {
             llPanelAdmin.visibility = View.GONE
