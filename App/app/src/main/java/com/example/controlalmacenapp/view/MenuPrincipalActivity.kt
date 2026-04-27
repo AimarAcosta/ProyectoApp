@@ -56,9 +56,13 @@ class MenuPrincipalActivity : BaseActivity() {
             btnGestionProveedores.setOnClickListener {
                 startActivity(Intent(this, ListaProveedoresActivity::class.java))
             }
-            // Conectamos el botón de Excel SOLO si es administrador
             btnInventarioExcel.setOnClickListener {
                 startActivity(Intent(this, InventarioExcelActivity::class.java))
+            }
+
+            val btnInformeEstadistico = findViewById<Button>(R.id.btnInformeEstadistico)
+            btnInformeEstadistico.setOnClickListener {
+                startActivity(Intent(this, InformeInventarioActivity::class.java))
             }
         } else {
             llPanelAdmin.visibility = View.GONE

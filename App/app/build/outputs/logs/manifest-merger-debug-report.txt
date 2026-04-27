@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:41:9-49:20
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:42:9-50:20
 	android:grantUriPermissions
-		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:45:13-47
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:46:13-47
 	android:authorities
 		INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:43:13-64
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:44:13-64
 	android:exported
-		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:45:13-37
 	android:name
-		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:42:13-62
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:43:13-62
 manifest
-ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\2354c5d2b3fbe9beb70ebb252f890fb4\transformed\room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\acost\.gradle\caches\8.13\transforms\ede871242254aacb1d2646eca5624006\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
@@ -68,8 +68,8 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\acost\.gradle\ca
 	xmlns:android
 		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-50:19
-INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-50:19
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-51:19
+INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:5:5-51:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\acost\.gradle\caches\8.13\transforms\4df40eb34dd9c8fdae4e034701ee370d\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\acost\.gradle\caches\8.13\transforms\ede871242254aacb1d2646eca5624006\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
@@ -178,12 +178,16 @@ activity#com.example.controlalmacenapp.view.InventarioExcelActivity
 ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:40:9-66
 	android:name
 		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:40:19-63
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:46:13-48:49
-	android:resource
-		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:48:17-46
+activity#com.example.controlalmacenapp.view.InformeInventarioActivity
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:41:9-68
 	android:name
-		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:47:17-67
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:41:19-65
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:47:13-49:49
+	android:resource
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:49:17-46
+	android:name
+		ADDED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml:48:17-67
 uses-sdk
 INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\acost\Downloads\ProyectoApp\App\app\src\main\AndroidManifest.xml

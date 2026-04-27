@@ -71,9 +71,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Inventario Completo (Excel)"
-            android:backgroundTint="#2196F3"
+            android:backgroundTint="#E91E63"
             android:textColor="#FFFFFF"
             android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnInformeEstadistico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Informe de Balance"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
     </LinearLayout>
 
     <TextView

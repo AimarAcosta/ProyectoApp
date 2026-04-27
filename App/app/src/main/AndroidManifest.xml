@@ -38,6 +38,7 @@
         <activity android:name=".view.InformeAlbaranesActivity" />
         <activity android:name=".view.DetalleAlbaranActivity" />
         <activity android:name=".view.InventarioExcelActivity" />
+        <activity android:name=".view.InformeInventarioActivity" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

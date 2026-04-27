@@ -13,6 +13,7 @@ id btnCancelarAlbaran
 id btnCancelarProducto
 id btnCancelarProveedor
 id btnCerrarInforme
+id btnCerrarInformeInv
 id btnCerrarSesion
 id btnCerrarVisor
 id btnEliminar
@@ -28,6 +29,7 @@ id btnGuardarAlbaran
 id btnGuardarProducto
 id btnGuardarProveedor
 id btnInformeAlbaranes
+id btnInformeEstadistico
 id btnInventarioExcel
 id btnIrCrearUsuario
 id btnNuevoAlbaran
@@ -71,6 +73,7 @@ id rvListaProductos
 id rvListaProveedores
 id rvListaUsuarios
 id rvUsuarios
+id tvAlertasStock
 id tvBienvenida
 id tvCantidad
 id tvCif
@@ -94,8 +97,11 @@ id tvTitulo
 id tvTituloAlbaranes
 id tvTituloInventario
 id tvTotalImporte
+id tvTotalReferencias
+id tvVolumenTotal
 layout activity_detalle_albaran
 layout activity_informe_albaranes
+layout activity_informe_inventario
 layout activity_inicio
 layout activity_inventario_excel
 layout activity_lista_albaranes
