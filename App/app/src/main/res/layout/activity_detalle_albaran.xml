@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000"> <TextView
+    android:id="@+id/tvInfoAlbaran"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cargando detalles..."
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivVisorFoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCerrarVisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Visor"
+        android:backgroundTint="#FF5252"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

@@ -51,6 +51,14 @@ class ListaAlbaranesActivity : BaseActivity() {
             startActivity(intent)
         }
 
+        val btnInforme = findViewById<Button>(R.id.btnInformeAlbaranes)
+        btnInforme.setOnClickListener {
+            val intent = Intent(this, InformeAlbaranesActivity::class.java)
+            intent.putExtra("PROVEEDOR_CIF", cifProveedorActual)
+            intent.putExtra("PROVEEDOR_NOMBRE", nombreProveedorActual)
+            startActivity(intent)
+        }
+
         val btnVolver = findViewById<Button>(R.id.btnVolver)
         btnVolver.setOnClickListener {
             finish()
@@ -72,7 +80,9 @@ class ListaAlbaranesActivity : BaseActivity() {
             withContext(Dispatchers.Main) {
                 if (!::adapter.isInitialized) {
                     adapter = AlbaranAdapter(lista) { albaran ->
-                        Toast.makeText(this@ListaAlbaranesActivity, "Detalles del albarán en construcción", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this@ListaAlbaranesActivity, DetalleAlbaranActivity::class.java)
+                        intent.putExtra("ALBARAN_ID", albaran.id)
+                        startActivity(intent)
                     }
                     rvAlbaranes.adapter = adapter
                 } else {

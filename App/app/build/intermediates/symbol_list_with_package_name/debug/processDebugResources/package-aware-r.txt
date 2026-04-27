@@ -3749,7 +3749,9 @@ id btnCancelar
 id btnCancelarAlbaran
 id btnCancelarProducto
 id btnCancelarProveedor
+id btnCerrarInforme
 id btnCerrarSesion
+id btnCerrarVisor
 id btnEliminar
 id btnEliminarProducto
 id btnEscanearAlbaran
@@ -3759,6 +3761,7 @@ id btnGuardar
 id btnGuardarAlbaran
 id btnGuardarProducto
 id btnGuardarProveedor
+id btnInformeAlbaranes
 id btnIrCrearUsuario
 id btnNuevoAlbaran
 id btnNuevoProducto
@@ -3923,6 +3926,7 @@ id ivFotoAlbaran
 id ivFotoUsuario
 id ivPreviewFoto
 id ivProducto
+id ivVisorFoto
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -4193,14 +4197,19 @@ id tvCif
 id tvEstadoPago
 id tvFechaAlbaran
 id tvImporteAlbaran
+id tvInfoAlbaran
 id tvNombreProducto
 id tvNombreProveedor
 id tvNombreUsuario
+id tvPagados
+id tvPendientes
+id tvResumenProveedores
 id tvTelefono
 id tvTieneFoto
 id tvTitulo
 id tvTituloAlbaranes
 id tvTituloInventario
+id tvTotalImporte
 id unchecked
 id uniform
 id unlabeled
@@ -4341,6 +4350,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detalle_albaran
+layout activity_informe_albaranes
 layout activity_inicio
 layout activity_lista_albaranes
 layout activity_lista_proveedores

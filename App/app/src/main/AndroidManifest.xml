@@ -35,6 +35,8 @@
         <activity android:name=".view.NuevoAlbaranActivity" />
         <activity android:name=".view.NuevoProveedorActivity" />
         <activity android:name=".view.ListaAlbaranesActivity" />
+        <activity android:name=".view.InformeAlbaranesActivity" />
+        <activity android:name=".view.DetalleAlbaranActivity" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

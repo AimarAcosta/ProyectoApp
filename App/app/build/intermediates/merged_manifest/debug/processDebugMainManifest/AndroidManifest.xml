@@ -51,6 +51,8 @@
         <activity android:name="com.example.controlalmacenapp.view.NuevoAlbaranActivity" />
         <activity android:name="com.example.controlalmacenapp.view.NuevoProveedorActivity" />
         <activity android:name="com.example.controlalmacenapp.view.ListaAlbaranesActivity" />
+        <activity android:name="com.example.controlalmacenapp.view.InformeAlbaranesActivity" />
+        <activity android:name="com.example.controlalmacenapp.view.DetalleAlbaranActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

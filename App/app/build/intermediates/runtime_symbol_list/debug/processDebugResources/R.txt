@@ -3748,7 +3748,9 @@ int id btnCancelar 0x7f080066
 int id btnCancelarAlbaran 0x7f080239
 int id btnCancelarProducto 0x7f080067
 int id btnCancelarProveedor 0x7f080232
+int id btnCerrarInforme 0x7f080246
 int id btnCerrarSesion 0x7f080068
+int id btnCerrarVisor 0x7f08024c
 int id btnEliminar 0x7f080069
 int id btnEliminarProducto 0x7f08006a
 int id btnEscanearAlbaran 0x7f08023a
@@ -3758,6 +3760,7 @@ int id btnGuardar 0x7f08006c
 int id btnGuardarAlbaran 0x7f08023b
 int id btnGuardarProducto 0x7f08006d
 int id btnGuardarProveedor 0x7f080233
+int id btnInformeAlbaranes 0x7f080247
 int id btnIrCrearUsuario 0x7f08006e
 int id btnNuevoAlbaran 0x7f08023f
 int id btnNuevoProducto 0x7f08006f
@@ -3922,6 +3925,7 @@ int id ivFotoAlbaran 0x7f08023e
 int id ivFotoUsuario 0x7f080103
 int id ivPreviewFoto 0x7f080104
 int id ivProducto 0x7f080105
+int id ivVisorFoto 0x7f08024d
 int id jumpToEnd 0x7f080106
 int id jumpToStart 0x7f080107
 int id labeled 0x7f080108
@@ -4192,14 +4196,19 @@ int id tvCif 0x7f08022f
 int id tvEstadoPago 0x7f080242
 int id tvFechaAlbaran 0x7f080243
 int id tvImporteAlbaran 0x7f080244
+int id tvInfoAlbaran 0x7f08024e
 int id tvNombreProducto 0x7f08020d
 int id tvNombreProveedor 0x7f080230
 int id tvNombreUsuario 0x7f08020e
+int id tvPagados 0x7f080248
+int id tvPendientes 0x7f080249
+int id tvResumenProveedores 0x7f08024a
 int id tvTelefono 0x7f080231
 int id tvTieneFoto 0x7f080245
 int id tvTitulo 0x7f08020f
 int id tvTituloAlbaranes 0x7f080241
 int id tvTituloInventario 0x7f080210
+int id tvTotalImporte 0x7f08024b
 int id unchecked 0x7f080211
 int id uniform 0x7f080212
 int id unlabeled 0x7f080213
@@ -4340,6 +4349,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_detalle_albaran 0x7f0b007c
+int layout activity_informe_albaranes 0x7f0b007b
 int layout activity_inicio 0x7f0b001c
 int layout activity_lista_albaranes 0x7f0b0079
 int layout activity_lista_proveedores 0x7f0b0075
