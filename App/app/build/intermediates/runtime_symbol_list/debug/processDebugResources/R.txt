@@ -3791,6 +3791,7 @@ int id buttonPanel 0x7f080089
 int id cache_measures 0x7f08008a
 int id callMeasure 0x7f08008b
 int id cancel_button 0x7f08008c
+int id cardProducto 0x7f080263
 int id carryVelocity 0x7f08008d
 int id cbAdmin 0x7f08008e
 int id cbHabilitado 0x7f08008f
@@ -3830,6 +3831,8 @@ int id currentState 0x7f0800b0
 int id custom 0x7f0800b1
 int id customPanel 0x7f0800b2
 int id cut 0x7f0800b3
+int id cvImageContainer 0x7f08025f
+int id cvPanelAdmin 0x7f08025e
 int id date_picker_actions 0x7f0800b4
 int id decelerate 0x7f0800b5
 int id decelerateAndComplete 0x7f0800b6
@@ -4225,11 +4228,13 @@ int id tvNombreUsuario 0x7f08023b
 int id tvPagados 0x7f08023c
 int id tvPendientes 0x7f08023d
 int id tvResumenProveedores 0x7f08023e
+int id tvSubtituloLogin 0x7f080260
 int id tvTelefono 0x7f08023f
 int id tvTieneFoto 0x7f080240
 int id tvTitulo 0x7f080241
 int id tvTituloAlbaranes 0x7f080242
 int id tvTituloInventario 0x7f080243
+int id tvTituloLogin 0x7f080261
 int id tvTotalImporte 0x7f080244
 int id tvTotalReferencias 0x7f080245
 int id tvVolumenTotal 0x7f080246
@@ -4238,6 +4243,7 @@ int id uniform 0x7f080248
 int id unlabeled 0x7f080249
 int id up 0x7f08024a
 int id useLogo 0x7f08024b
+int id vIndicadorAlerta 0x7f080264
 int id vertical_only 0x7f08024c
 int id view_offset_helper 0x7f08024d
 int id view_transition 0x7f08024e

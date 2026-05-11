@@ -1,104 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    android:fillViewport="true">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ficha del Producto"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="24dp"
-        android:textColor="#333333"/>
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <ImageView
-        android:id="@+id/ivPreviewFoto"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="8dp"
-        android:background="#E0E0E0"
-        android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ficha Técnica del Producto"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textColor="#2C3E50"/>
 
-    <Button
-        android:id="@+id/btnTomarFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:text="Tomar Foto"
-        android:backgroundTint="#2196F3" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="70dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#D5D8DC">
 
-    <EditText
-        android:id="@+id/etNombreProducto"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Nombre del Producto"
-        android:inputType="textCapWords"
-        android:background="#FFFFFF"
-        android:paddingHorizontal="12dp"
-        android:layout_marginBottom="16dp"/>
+            <ImageView
+                android:id="@+id/ivPreviewFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#EAECEE"
+                android:src="@drawable/perfil" />
+        </com.google.android.material.card.MaterialCardView>
 
-    <EditText
-        android:id="@+id/etCantidad"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Stock Inicial"
-        android:inputType="number"
-        android:background="#FFFFFF"
-        android:paddingHorizontal="12dp"
-        android:layout_marginBottom="16dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTomarFoto"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="📷 Cambiar Imagen"
+            android:textColor="#2196F3" />
 
-    <EditText
-        android:id="@+id/etCantidadMinima"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Alarma de Stock Mínimo"
-        android:inputType="number"
-        android:background="#FFFFFF"
-        android:paddingHorizontal="12dp"
-        android:layout_marginBottom="16dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Nombre del Producto *"
+            app:startIconDrawable="@android:drawable/ic_menu_edit">
 
-    <CheckBox
-        android:id="@+id/cbProductoHabilitado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Producto visible en el inventario"
-        android:textSize="16sp"
-        android:layout_marginBottom="24dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Stock Actual *"
+            app:startIconDrawable="@android:drawable/ic_input_add">
 
-    <Button
-        android:id="@+id/btnGuardarProducto"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Guardar Producto"
-        android:backgroundTint="#4CAF50"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnEliminarProducto"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Eliminar Definitivamente"
-        android:backgroundTint="#FF5252"
-        android:layout_marginTop="8dp"
-        android:visibility="gone"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Alarma de Stock Mínimo *"
+            app:startIconDrawable="@android:drawable/ic_dialog_alert">
 
-    <Button
-        android:id="@+id/btnCancelarProducto"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Cancelar y Volver"
-        android:backgroundTint="#B0BEC5"
-        android:layout_marginTop="8dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCantidadMinima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-</LinearLayout>
+        <CheckBox
+            android:id="@+id/cbProductoHabilitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habilitar visualización en inventario"
+            android:textSize="16sp"
+            android:textColor="#34495E"
+            android:layout_marginBottom="32dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Guardar Cambios"
+            android:textSize="18sp"
+            app:backgroundTint="#27AE60"
+            app:cornerRadius="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="12dp"
+            android:text="Eliminar Producto"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:backgroundTint="#E74C3C"
+            app:cornerRadius="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelarProducto"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="12dp"
+            android:text="Descartar y Volver"
+            android:textSize="18sp"
+            android:textColor="#2C3E50"
+            app:backgroundTint="#D5D8DC"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -35,8 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         cargarUsuarios(rvUsuarios)
 
-
-
     }
 
     private fun cargarUsuarios(rv: RecyclerView) {

@@ -17,7 +17,7 @@ class ProductoController(private val dao: ProductoDao) {
         return dao.buscarProductosPorNombre(patron)
     }
 
-    suspend fun obtenerProducto(id: Int): ProductoEntity? {
+    suspend fun obtenerProductoPorId(id: Int): ProductoEntity? {
         return dao.obtenerProductoPorId(id)
     }
 

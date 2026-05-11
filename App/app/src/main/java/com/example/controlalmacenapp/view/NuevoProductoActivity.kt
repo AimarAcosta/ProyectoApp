@@ -4,12 +4,12 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
 import com.example.controlalmacenapp.R
 import com.example.controlalmacenapp.controller.ProductoController
 import com.example.controlalmacenapp.model.database.AppDatabase
 import com.example.controlalmacenapp.model.entities.ProductoEntity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -76,7 +76,7 @@ class NuevoProductoActivity : BaseActivity() {
 
     private fun cargarDatosParaEdicion() {
         lifecycleScope.launch(Dispatchers.IO) {
-            productoOriginal = controller.obtenerProducto(productoIdActual)
+            productoOriginal = controller.obtenerProductoPorId(productoIdActual)
             withContext(Dispatchers.Main) {
                 productoOriginal?.let {
                     etNombre.setText(it.nombre)
@@ -126,19 +126,31 @@ class NuevoProductoActivity : BaseActivity() {
     }
 
     private fun confirmarEliminacion() {
-        AlertDialog.Builder(this)
-            .setTitle("Eliminar Producto")
-            .setMessage("¿Estás seguro de que deseas eliminar este producto?")
+        MaterialAlertDialogBuilder(this)
+            .setTitle("¿Eliminar producto?")
+            .setMessage("Esta acción no se puede deshacer. El producto desaparecerá del inventario permanentemente.")
+            .setIcon(android.R.drawable.ic_dialog_alert)
             .setPositiveButton("Eliminar") { _, _ ->
-                lifecycleScope.launch(Dispatchers.IO) {
-                    productoOriginal?.let { controller.eliminarProducto(it) }
+                eliminarProductoDefinitivamente()
+            }
+            .setNegativeButton("Cancelar", null)
+            .show()
+    }
+
+    private fun eliminarProductoDefinitivamente() {
+        val idParaBorrar = if (productoIdActual != 0) productoIdActual else intent.getIntExtra("PRODUCTO_ID", -1)
+
+        if (idParaBorrar != -1) {
+            lifecycleScope.launch(Dispatchers.IO) {
+                val productoABorrar = controller.obtenerProductoPorId(idParaBorrar)
+                if (productoABorrar != null) {
+                    controller.eliminarProducto(productoABorrar)
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(this@NuevoProductoActivity, "Producto eliminado", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@NuevoProductoActivity, "Producto eliminado con éxito", Toast.LENGTH_SHORT).show()
                         finish()
                     }
                 }
             }
-            .setNegativeButton("Cancelar", null)
-            .show()
+        }
     }
 }

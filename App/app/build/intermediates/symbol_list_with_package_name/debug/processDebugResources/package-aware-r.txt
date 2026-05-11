@@ -3792,6 +3792,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardProducto
 id carryVelocity
 id cbAdmin
 id cbHabilitado
@@ -3831,6 +3832,8 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvImageContainer
+id cvPanelAdmin
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4226,11 +4229,13 @@ id tvNombreUsuario
 id tvPagados
 id tvPendientes
 id tvResumenProveedores
+id tvSubtituloLogin
 id tvTelefono
 id tvTieneFoto
 id tvTitulo
 id tvTituloAlbaranes
 id tvTituloInventario
+id tvTituloLogin
 id tvTotalImporte
 id tvTotalReferencias
 id tvVolumenTotal
@@ -4239,6 +4244,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vIndicadorAlerta
 id vertical_only
 id view_offset_helper
 id view_transition

@@ -38,15 +38,20 @@ class MenuPrincipalActivity : BaseActivity() {
         val tvBienvenida = findViewById<TextView>(R.id.tvBienvenida)
         tvBienvenida.text = "Panel: $nombreUsuario"
 
+        val cvPanelAdmin = findViewById<com.google.android.material.card.MaterialCardView>(R.id.cvPanelAdmin)
         val llPanelAdmin = findViewById<LinearLayout>(R.id.llPanelAdmin)
+
         val btnGestionUsuarios = findViewById<Button>(R.id.btnGestionUsuarios)
         val btnNuevoProducto = findViewById<Button>(R.id.btnNuevoProducto)
         val btnGestionProveedores = findViewById<Button>(R.id.btnGestionProveedores)
-
         val btnInventarioExcel = findViewById<Button>(R.id.btnInventarioExcel)
+        val btnInformeEstadistico = findViewById<Button>(R.id.btnInformeEstadistico)
+        val btnGestionAlbaranes = findViewById<Button>(R.id.btnGestionAlbaranes)
 
         if (esAdmin) {
+            cvPanelAdmin.visibility = View.VISIBLE
             llPanelAdmin.visibility = View.VISIBLE
+
             btnGestionUsuarios.setOnClickListener {
                 startActivity(Intent(this, ListaUsuariosActivity::class.java))
             }
@@ -59,17 +64,14 @@ class MenuPrincipalActivity : BaseActivity() {
             btnInventarioExcel.setOnClickListener {
                 startActivity(Intent(this, InventarioExcelActivity::class.java))
             }
-
-            val btnInformeEstadistico = findViewById<Button>(R.id.btnInformeEstadistico)
             btnInformeEstadistico.setOnClickListener {
                 startActivity(Intent(this, InformeInventarioActivity::class.java))
             }
-
-            val btnGestionAlbaranes = findViewById<Button>(R.id.btnGestionAlbaranes)
             btnGestionAlbaranes.setOnClickListener {
                 startActivity(Intent(this, ListaAlbaranesActivity::class.java))
             }
         } else {
+            cvPanelAdmin.visibility = View.GONE
             llPanelAdmin.visibility = View.GONE
         }
 
