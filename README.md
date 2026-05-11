@@ -17,4 +17,4 @@ Aplicacion Android offline para la gestion de inventario y control de personal e
 * Sprint 2: Completado (Modelo relacional de base de datos y logica de Login).
 * Sprint 3: Completado (CRUD de productos, control de stock con alertas visuales y toma de fotografías).
 * Sprint 4: Completado (Gestión de proveedores y registro de albaranes de entrada).
-* Sprint 5: Pendiente (Listado de inventario formato Excel, informes de stock y control de inactividad de sesión).
+* Sprint 5: Completado (Listado de inventario formato Excel, informes de stock y control de inactividad de sesión).
