@@ -1,1 +1,0 @@
-C:\Users\acost\Downloads\ProyectoApp\App\app\src\androidTest\java\com\example\controlalmacenapp\ExampleInstrumentedTest.kt

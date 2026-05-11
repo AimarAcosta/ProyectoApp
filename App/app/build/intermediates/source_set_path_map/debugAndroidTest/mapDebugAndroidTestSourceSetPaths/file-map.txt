@@ -1,5 +1,0 @@
-com.example.controlalmacenapp.test.app-androidTest-0 C:\Users\acost\Downloads\ProyectoApp\App\app\build\generated\res\resValues\androidTest\debug
-com.example.controlalmacenapp.test.app-updated_navigation_xml-1 C:\Users\acost\Downloads\ProyectoApp\App\app\build\generated\updated_navigation_xml\debugAndroidTest
-com.example.controlalmacenapp.test.app-mergeDebugAndroidTestResources-2 C:\Users\acost\Downloads\ProyectoApp\App\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.controlalmacenapp.test.app-mergeDebugAndroidTestResources-3 C:\Users\acost\Downloads\ProyectoApp\App\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.controlalmacenapp.test.app-debugAndroidTest-4 C:\Users\acost\Downloads\ProyectoApp\App\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

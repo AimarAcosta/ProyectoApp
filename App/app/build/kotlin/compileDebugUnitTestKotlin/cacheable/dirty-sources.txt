@@ -1,1 +1,0 @@
-C:\Users\acost\Downloads\ProyectoApp\App\app\src\test\java\com\example\controlalmacenapp\ExampleUnitTest.kt

@@ -37,6 +37,14 @@
             android:layout_marginBottom="16dp"/>
 
         <EditText
+            android:id="@+id/etCifProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CIF del Proveedor *"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
             android:id="@+id/etImporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

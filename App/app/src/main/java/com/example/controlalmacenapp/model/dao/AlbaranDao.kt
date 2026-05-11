@@ -27,4 +27,7 @@ interface AlbaranDao {
 
     @Query("SELECT * FROM albaranes WHERE id = :id")
     suspend fun obtenerAlbaranPorId(id: Int): AlbaranEntity?
+
+    @Query("SELECT * FROM albaranes ORDER BY fecha_emision DESC")
+    suspend fun obtenerTodosLosAlbaranes(): List<AlbaranEntity>
 }

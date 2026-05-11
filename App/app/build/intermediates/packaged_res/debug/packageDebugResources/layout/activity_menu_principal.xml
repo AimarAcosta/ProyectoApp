@@ -67,6 +67,15 @@
             android:textColor="#FFFFFF" />
 
         <Button
+            android:id="@+id/btnGestionAlbaranes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Gestión de Albaranes"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFFFFF" />
+
+        <Button
             android:id="@+id/btnInventarioExcel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

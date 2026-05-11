@@ -1,7 +1,13 @@
 R_DEF: Internal format may change without notice
 local
+color accent
 color black
+color excel_alert
+color excel_disabled
+color excel_ok
 color ic_launcher_background
+color primary
+color primary_dark
 color white
 drawable baseline_plus_one_24
 drawable borde_celda_excel
@@ -23,6 +29,7 @@ id btnEscanearAlbaran
 id btnFiltroDeshabilitados
 id btnFiltroMinimo
 id btnFiltroTodos
+id btnGestionAlbaranes
 id btnGestionProveedores
 id btnGestionUsuarios
 id btnGuardar

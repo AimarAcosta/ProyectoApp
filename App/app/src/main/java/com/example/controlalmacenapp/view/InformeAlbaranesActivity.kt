@@ -3,7 +3,6 @@ package com.example.controlalmacenapp.view
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import com.example.controlalmacenapp.R
 import com.example.controlalmacenapp.controller.AlbaranController
@@ -23,13 +22,7 @@ class InformeAlbaranesActivity : BaseActivity() {
         setContentView(R.layout.activity_informe_albaranes)
 
         cifProveedorActual = intent.getStringExtra("PROVEEDOR_CIF") ?: ""
-        nombreProveedorActual = intent.getStringExtra("PROVEEDOR_NOMBRE") ?: "Varios"
-
-        if (cifProveedorActual.isBlank()) {
-            Toast.makeText(this, "Error de datos", Toast.LENGTH_SHORT).show()
-            finish()
-            return
-        }
+        nombreProveedorActual = intent.getStringExtra("PROVEEDOR_NOMBRE") ?: ""
 
         val db = AppDatabase.invoke(this)
         controller = AlbaranController(db.albaranDao())
@@ -41,10 +34,12 @@ class InformeAlbaranesActivity : BaseActivity() {
 
     private fun generarInforme() {
         lifecycleScope.launch(Dispatchers.IO) {
-            // Extraemos los albaranes como pruebas
-            val listaAlbaranes = controller.obtenerAlbaranesDeProveedor(cifProveedorActual)
+            val listaAlbaranes = if (cifProveedorActual.isNotBlank()) {
+                controller.obtenerAlbaranesDeProveedor(cifProveedorActual)
+            } else {
+                controller.obtenerTodosLosAlbaranes()
+            }
 
-            // Procesamos los datos
             var totalImporte = 0.0
             var pagados = 0
             var pendientes = 0
@@ -64,7 +59,12 @@ class InformeAlbaranesActivity : BaseActivity() {
                 val tvPagados = findViewById<TextView>(R.id.tvPagados)
                 val tvPendientes = findViewById<TextView>(R.id.tvPendientes)
 
-                tvResumenProveedores.text = "Proveedor:\n$nombreProveedorActual (CIF: $cifProveedorActual)"
+                if (cifProveedorActual.isNotBlank()) {
+                    tvResumenProveedores.text = "Proveedor:\n$nombreProveedorActual (CIF: $cifProveedorActual)"
+                } else {
+                    tvResumenProveedores.text = "Informe Global\nTodos los proveedores"
+                }
+
                 tvTotalImporte.text = String.format("Importe Total: %.2f €", totalImporte)
                 tvPagados.text = "Albaranes Pagados: $pagados"
                 tvPendientes.text = "Albaranes Pendientes: $pendientes"

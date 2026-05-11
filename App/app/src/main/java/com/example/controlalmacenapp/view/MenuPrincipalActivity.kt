@@ -64,6 +64,11 @@ class MenuPrincipalActivity : BaseActivity() {
             btnInformeEstadistico.setOnClickListener {
                 startActivity(Intent(this, InformeInventarioActivity::class.java))
             }
+
+            val btnGestionAlbaranes = findViewById<Button>(R.id.btnGestionAlbaranes)
+            btnGestionAlbaranes.setOnClickListener {
+                startActivity(Intent(this, ListaAlbaranesActivity::class.java))
+            }
         } else {
             llPanelAdmin.visibility = View.GONE
         }
@@ -115,7 +120,6 @@ class MenuPrincipalActivity : BaseActivity() {
                         onRestarCincoClick = { producto ->
                             lifecycleScope.launch(Dispatchers.IO) {
                                 if (producto.cantidad > 0) {
-                                    // Blindaje de seguridad: nunca bajar de 0
                                     val nuevoStock = if (producto.cantidad - 5 < 0) 0 else producto.cantidad - 5
                                     controller.guardarProducto(producto.copy(cantidad = nuevoStock))
                                     cargarInventario()

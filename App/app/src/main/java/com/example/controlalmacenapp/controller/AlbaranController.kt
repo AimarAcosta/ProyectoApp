@@ -28,4 +28,8 @@ class AlbaranController(private val dao: AlbaranDao) {
     suspend fun obtenerPendientesDePago(): List<AlbaranEntity> {
         return dao.obtenerAlbaranesPendientes()
     }
+
+    suspend fun obtenerTodosLosAlbaranes(): List<AlbaranEntity> {
+        return dao.obtenerTodosLosAlbaranes()
+    }
 }
